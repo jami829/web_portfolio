@@ -1,6 +1,12 @@
 body {
   margin: 0 auto;
   box-sizing: border-box;
+  overflow: auto;
 
+  background: url(../img/landing3.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
