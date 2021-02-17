@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Blog from "./Blog";
 import Landing from "./Landing";
 import Project from "./Project";
@@ -9,7 +9,12 @@ import Stack from "./Stack";
 
 
 
+
 function Main() {
+
+
+
+
   return (
     <div>
       <section>
