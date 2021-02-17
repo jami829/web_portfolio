@@ -1,4 +1,5 @@
 import React from "react";
+import { FiChevronDown } from "react-icons/fi";
 
 
 
@@ -17,6 +18,9 @@ function Landing() {
               <span className="landing_title">
                 코딩에서 인생을 배우다.
               </span>
+              <div className="scrollDown">
+                <span><FiChevronDown /></span>
+              </div>
             </div>
 
           </div>

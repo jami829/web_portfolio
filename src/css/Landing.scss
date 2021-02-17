@@ -33,6 +33,19 @@
 
       
       }
+      .scrollDown {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        span {
+          opacity: 0;
+          animation: scroll 2s linear 2.5s infinite;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
 
     }
   }
@@ -56,5 +69,45 @@
   }
   to {
     border-color: transparent;
+  }
+}
+
+@keyframes scroll {
+  from {
+    color: whitesmoke;
+    
+    // transition: ease-in;
+    text-shadow: 0 0 40px whitesmoke;
+    opacity: 0;
+
+  }
+
+  25%{
+    color: whitesmoke;
+    
+    // transition: ease-in;
+    text-shadow: 0 0 40px whitesmoke;
+    opacity: 0.5;
+  }
+
+  50%{
+    color: whitesmoke;
+    opacity: 1;
+  }
+
+  75% {
+    color: whitesmoke;
+    
+    // transition: ease-in;
+    text-shadow: 0 0 40px whitesmoke;
+    opacity: 0.5;
+  }
+
+  to {
+    color: whitesmoke;
+    
+    // transition: ease-in;
+    text-shadow: 0 0 10px whitesmoke;
+    opacity: 0.2;
   }
 }
