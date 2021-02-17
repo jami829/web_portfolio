@@ -1,5 +1,5 @@
 import React from "react";
-import landing from "../img/landing3.jpeg";
+
 
 
 // css
@@ -7,9 +7,21 @@ import "../css/Landing.scss"
 
 function Landing() {
   return (
-    // <div id="landing_img" style={{ backgroundImage: `url(${landing}` }}>
-    <div className="landing_img">
-      {/* <img src={landing} alt="랜딩페이지 배경화면입니다." /> */}
+
+    <div className="landing">
+      <div className="landing_overlay"></div>
+      <div className="landing_container">
+        <div className="landing_contents">
+          <div className="landing_inner">
+            <div>
+              <span className="landing_title">
+                코딩에서 인생을 배우다.
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
