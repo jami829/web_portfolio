@@ -1,18 +1,65 @@
 .Stack {
+  position: relative;
   width: 100%;
   height: 100vh;
   color: white;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), 20%, rgba(255, 255, 255, 0.23));
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .stack_container {
-    width: 100%;
-    height: 100%;
+
+  .stack_contents {
+    // display: table;
+
+    width: 100% !important;
+    height: 100% !important;
     .stack_inner {
-
+      // display: table-cell;      
+      width: 100%;
+      height: 100%;
+      
       .stack_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .stack_box{
+        display: flex;  
+        justify-content: space-evenly;
+        padding: 5%;
+        // width: 100%;
+        // height: 100%;
+        // padding: 5px;
         
+        div {
+          position: relative;
+          display: inline-flex;
+          text-align: center;
+          width: 170px;
+          height: 140px;
+          flex-direction: column;
+          font-size: 1rem;
+          img {
+            width: 165px;
+            height: 135px;
+            // size: 10px;
+            object-fit: contain;
+          }
+          .stack_text {
+            display: none;
+
+          }
+          &:hover {
+            cursor: pointer;
+            .stack_text {
+              height: 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin-top: 30px;
+              line-height: 1.65;
+              // color: ;
+            }
+          }
+        }
       }
     }
   }
