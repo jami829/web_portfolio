@@ -22,14 +22,12 @@
         grid-gap: 70px;
 
         .post {
-          &:hover {
-            cursor: pointer;
-          }
           a {
             text-decoration: none;
           }
-          
+          transition: all .3s ease;
           position: relative;
+          top: 0;
           width: 100%;
           border: 1px solid #d9d9d9;
           border-radius: 6px;
@@ -53,13 +51,24 @@
             height: 50px;
             padding: 30px;
             font-size: 17px;
-
+            
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             p {
               color: gray;
               font-size: 14px;
             }
           }
+
+          &:hover {
+            cursor: pointer;
+            transition: all .3s ease;
+            
+            box-shadow: 12px 12px 12px rgba(38, 38, 38, .2);
+            top: -10px;
+          }
         }
       }
     }
-}
+  }

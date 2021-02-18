@@ -88,7 +88,7 @@ const BlogItem = ({ post }) => {
         </div>
         <div className="post-info">
           <strong className="post-title">
-            {post.title.length < 28 ? post.title : post.title.substring(0, 28) + "..."}
+            {post.title}
           </strong>
           <p>{post.pubDate.substring(5, 16)}</p>
         </div>
