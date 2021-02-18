@@ -4,15 +4,19 @@ import BlogItemContainer from '../components/BlogItemContainer';
 // css
 import "../css/Blog.scss";
 
+// data
+import { blogDatas } from '../asset/blogData';
+
 function Blog() {
+  // console.log("blogDatas", blogDatas)
 
-
-  <BlogItemContainer />
 
 
   return (
     <div className="blog">
-      블로그 포스트 게시
+      <p>블로그 포스트 게시</p>
+      <BlogItemContainer />
+
     </div>
   )
 }
