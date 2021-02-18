@@ -81,16 +81,18 @@ const BlogItem = ({ post }) => {
 
   // console.log(post.description)
   return (
-
-
     <div className="post">
-      <div className="post-img">
-        <img src={imgUrl} />
-      </div>
-      <div className="post-info">
-        <strong className="post-title">타이틀</strong>
-        <p>created_at</p>
-      </div>
+      <a href={post.link} target="_blank">
+        <div className="post-img">
+          <img src={imgUrl} />
+        </div>
+        <div className="post-info">
+          <strong className="post-title">
+            {post.title.length < 28 ? post.title : post.title.substring(0, 28) + "..."}
+          </strong>
+          <p>{post.pubDate.substring(5, 16)}</p>
+        </div>
+      </a>
     </div>
   )
 }
