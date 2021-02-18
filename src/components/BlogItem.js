@@ -1,7 +1,7 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 
-// css
-import "../css/BlogItem.scss";
+// css -> blog.scss
+
 
 const BlogItem = ({ post }) => {
 

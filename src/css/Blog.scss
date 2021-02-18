@@ -1,14 +1,50 @@
 .blog {
   width: 100%;
   height: 100vh;
+  margin: 50px 0;
+
+  // text-align: center;
 
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  .blog-inner {
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-  }
+  
+  
+  #item-list-container {
+      width: 100%;
+      height: 100%;
+      padding: 7%;  
+    
+      #item-list-inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        grid-gap: 70px;
+
+        .post {
+
+          position: relative;
+          width: 100%;
+          
+          .post-img {
+            display: block;
+            width: 100%;
+            height: 260px;
+            
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          
+          .post-info {
+            background-color: whitesmoke;
+            color: black;
+            width: 100%;
+            height: 100px;
+          }
+        }
+      }
+    }
 }
