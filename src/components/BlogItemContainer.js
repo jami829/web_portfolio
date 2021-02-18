@@ -2,8 +2,8 @@ import React from 'react';
 import { blogDatas } from '../asset/blogData'
 import BlogItem from './BlogItem';
 
-// css
-import '../css/BlogItemContainer.scss'
+// css -> blog.scss
+
 
 function BlogItemContainer() {
   const posts = blogDatas.channel.item;
@@ -12,7 +12,7 @@ function BlogItemContainer() {
     <div id="item-list-container">
       <div id="item-list-inner">
         {posts.map((post, idx) => {
-          if (idx < 10) {
+          if (idx < 9) {
             return <BlogItem key={idx} post={post} />
           }
           return
