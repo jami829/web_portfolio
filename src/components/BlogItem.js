@@ -1,6 +1,9 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 
+import emptyImg from "../img/a.jpg"
+
 // css -> blog.scss
+
 
 
 const BlogItem = ({ post }) => {
@@ -16,18 +19,55 @@ const BlogItem = ({ post }) => {
       setSrcIdx(
         description.indexOf("src")
       )
-      if (description.includes("png") || description.includes("jpg") || description.includes("jpeg")) {
+
+      if (description.includes("png")) {
         setImgIdx(
-          description.indexOf("png") || description.indexOf("jpg") || description.indexOf("jpeg") || description.indexOf("gif")
+          description.indexOf("png")
+          // description.indexOf("png") || description.indexOf("jpg") || description.indexOf("jpeg") || description.indexOf("gif")
         )
         setImgUrl(
           description.substring(srcIdx + 5, imgIdx + 3)
+        )
+
+      }
+      else if (description.indexOf("gif")) {
+
+        setImgIdx(
+          description.indexOf("gif")
+        )
+
+        setImgUrl(
+          description.substring(srcIdx + 5, imgIdx + 3)
+        )
+
+      }
+      else if (description.indexOf("jpg")) {
+        setImgIdx(
+          description.indexOf("jpg")
+        )
+        setImgUrl(
+          description.substring(srcIdx + 5, imgIdx + 3)
+        )
+
+      }
+      else if (description.indexOf("jpeg")) {
+        setImgIdx(
+          description.indexOf("jpeg")
+        )
+        setImgUrl(
+          description.substring(srcIdx + 5, imgIdx + 3)
+        )
+
+      }
+      else {
+        setImgUrl(
+          emptyImg
         )
       }
     }
     else {
       setImgUrl(
-        "no img"
+        emptyImg
       )
     }
   }
