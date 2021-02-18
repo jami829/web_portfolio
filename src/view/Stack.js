@@ -57,7 +57,8 @@ function Stack() {
         <div className="stack_inner">
           <div className="stack_title">
             <div>
-              <span {...useScrollAnimation('up', 1, 0)}>
+              <span {...useScrollAnimation()}>
+
                 저는 이러한 스택을 사용합니다.
               </span>
             </div>

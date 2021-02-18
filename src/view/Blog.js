@@ -14,9 +14,10 @@ function Blog() {
 
   return (
     <div className="blog">
-      <p>블로그 포스트 게시</p>
-      <BlogItemContainer />
-
+      <div className="blog-inner">
+        <p>블로그 포스트 게시</p>
+        <BlogItemContainer />
+      </div>
     </div>
   )
 }
