@@ -1,12 +1,7 @@
 import React from 'react';
 
-const BlogItem = ({
-  title,
-  link,
-  created_at,
-  description
-}) => {
-
+const BlogItem = ({ post }) => {
+  console.log(post.description)
   return (
 
     <div className="post">
