@@ -29,8 +29,8 @@
           white-space: nowrap;  // 콘텐츠가 한 줄에 계속 담기도록
           margin: 0 auto !important;  // 가운데 고정시켜 애니메이션이 실행되도록
           letter-spacing: .15em; // 글자간 간격
-          animation: typing 2s steps(25, end ), blink-caret .75s step-end infinite
-  
+          animation: stack_typing 2s steps(25, end) 1.5s, blink-caret .75s step-end infinite
+          
         }
       }
       .stack_box{
@@ -77,11 +77,12 @@
   }
 }
 
-// @keyframes stack_typing {
-//   from {
-//     width: 0%;
-//   }
-//   to {
-//     width: 100%;
-//   }
-// }
+@keyframes stack_typing {
+  from {
+    width: 0%;
+  }
+  
+  to {
+    width: 100%;
+  }
+}

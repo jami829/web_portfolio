@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef } from "react";
 
 
 
-const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
+const useScrollAnimation = (direction = 'up', duration = 1, delay = 0) => {
   const element = useRef();
 
   const handleDirection = (name) => {
@@ -25,11 +25,17 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
 
     if (entry.isIntersecting) {
       current.style.transitionProperty = 'all';
-      current.style.transitionDuration = `${duration}s`;
+      // current.style.transitionDuration = `${duration}s`;
       current.style.transitionTimingFunction = 'cubic-bezier(0, 0, 0.2, 1)';
       current.style.transitionDelay = `${delay}s`;
       current.style.opacity = 1;
       current.style.transform = 'translate3d(0, 0, 0)';
+
+      current.style.animationPlayState = "running";
+      current.style.animationName = "stack_typing";
+      current.style.animationDutarion = `${duration}s`;
+      current.style.animationTimingFunction = 'steps(25, end)';
+      current.style.animationDelay = `${delay}s`
     }
   }, [])
 
@@ -55,4 +61,4 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
   };
 };
 
-export default useScrollFadeIn;
+export default useScrollAnimation;

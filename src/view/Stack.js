@@ -5,6 +5,7 @@ import "../css/Stack.scss";
 
 // component
 import useScrollFadeIn from "../components/useScrollFadeIn";
+import useScrollAnimation from "../components/useScrollAnimation";
 
 // img 
 import cloudFront from "../img/stack/cloudFront.png"
@@ -56,13 +57,13 @@ function Stack() {
         <div className="stack_inner">
           <div className="stack_title">
             <div>
-              <span {...useScrollFadeIn('up', 2, 1.5)}>
+              <span {...useScrollAnimation('up', 1, 0)}>
                 저는 이러한 스택을 사용합니다.
               </span>
             </div>
           </div>
           <div className="stack_box">
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.2)}>
               <img src={react} alt="dd" />
               <div className="stack_text" >
                 <div>
@@ -73,7 +74,7 @@ function Stack() {
                 </div>
               </div>
             </div>
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.2)}>
               <img src={vue} alt="dd" />
               <div className="stack_text">
                 <div>
@@ -84,25 +85,25 @@ function Stack() {
                 </div>
               </div>
             </div>
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.2)}>
               <img src={redux} alt="dd" />
               <div className="stack_text">
                 # Redux
               </div>
             </div>
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.2)}>
               <img src={scss} alt="dd" />
               <div className="stack_text">
                 # SCSS
               </div>
             </div>
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.6)}>
               <img src={css} alt="dd" />
               <div className="stack_text">
                 # CSS
               </div>
             </div>
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.4)}>
               <img src={html} alt="dd" />
               <div className="stack_text">
                 # HTML
@@ -110,19 +111,19 @@ function Stack() {
             </div>
           </div>
           <div className="stack_box">
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.2)}>
               <img src={js} alt="dd" />
               <div className="stack_text">
                 # JavaScript
               </div>
             </div>
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.4)}>
               <img src={ts} alt="dd" />
               <div className="stack_text">
                 # TypeScript
               </div>
             </div>
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.6)}>
               <img src={mysql} alt="dd" />
               <div className="stack_text">
                 <div>
@@ -133,13 +134,13 @@ function Stack() {
                 </div>
               </div>
             </div>
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.2)}>
               <img src={express} alt="dd" />
               <div className="stack_text">
                 # Express.js
               </div>
             </div>
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.4)}>
               <img src={nodejs} alt="dd" />
               <div className="stack_text">
                 # node.js
@@ -147,7 +148,7 @@ function Stack() {
             </div>
           </div>
           <div className="stack_box">
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.6)}>
               <img src={s3} alt="dd" />
               <div className="stack_text">
                 <div>
@@ -158,7 +159,7 @@ function Stack() {
                 </div>
               </div>
             </div>
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.8)}>
               <img src={ec2} alt="dd" />
               <div className="stack_text">
                 <div>
@@ -169,7 +170,7 @@ function Stack() {
                 </div>
               </div>
             </div>
-            <div className="sa up">
+            <div className="sa up" {...useScrollFadeIn('up', 1, 0.2)}>
               <img src={cloudFront} alt="dd" />
               <div className="stack_text">
                 <div>
