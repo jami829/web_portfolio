@@ -1,7 +1,7 @@
 import React from "react";
 import { FiChevronDown } from "react-icons/fi";
 
-
+import useScrollFadeIn from "../components/useScrollFadeIn";
 
 // css
 import "../css/Landing.scss"

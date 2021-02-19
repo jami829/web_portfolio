@@ -24,20 +24,20 @@ const useScrollAnimation = () => {
     const { current } = element;
 
     if (entry.isIntersecting) {
-      current.style.transitionProperty = 'all';
+      // current.style.transitionProperty = 'all';
       // current.style.transitionDuration = `${duration}s`;
       current.style.transitionTimingFunction = 'cubic-bezier(0, 0, 0.2, 1)';
       // current.style.transitionDelay = `${delay}s`;
       current.style.opacity = 1;
-      current.style.transform = 'translate3d(0, 0, 0)';
+      // current.style.transform = 'translate3d(0, 0, 0)';
 
       // current.style.color = 'rgba(255, 255, 255, 255)';
       current.style.animationPlayState = "running";
       // current.style.animationName = "stack_typing";
       // current.style.animationDutarion = `${duration}s`;
-      // current.style.animationTimingFunction = 'steps(25, end)';
+      current.style.animationTimingFunction = 'steps(25, end)';
       // current.style.animationDelay = `${delay}s`
-      // current.style.animationIterationCount = "inherit"
+      current.style.animationIterationCount = "inherit"
     }
   }, [])
 

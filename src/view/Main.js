@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import About from "./About";
 import Blog from "./Blog";
 import Landing from "./Landing";
 import Project from "./Project";
@@ -19,6 +20,10 @@ function Main() {
     <div>
       <section>
         <Landing />
+      </section>
+
+      <section>
+        <About />
       </section>
 
       <section>

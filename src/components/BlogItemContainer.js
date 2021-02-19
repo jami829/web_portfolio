@@ -1,6 +1,7 @@
 import React from 'react';
 import { blogDatas } from '../asset/blogData'
-import BlogItem from './BlogItem';
+// import BlogItem from './BlogItem';
+import Temp from './Temp';
 
 // css -> blog.scss
 
@@ -13,7 +14,8 @@ function BlogItemContainer() {
       <div id="item-list-inner">
         {posts.map((post, idx) => {
           if (idx < 9) {
-            return <BlogItem key={idx} post={post} />
+            // return <BlogItem key={idx} post={post} />
+            return <Temp key={idx} post={post} />
           }
           return
         })}
