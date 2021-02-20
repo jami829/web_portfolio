@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 
-import useScrollFadeIn from "../components/useScrollFadeIn";
+import useScrollFadeOut from "../components/useScrollFadeOut";
 
 // css
 import "../css/Landing.scss"
 
 function Landing() {
+
+  const titleLocation = useRef();
+
+  const handleFadeOut = () => {
+    const { current } = titleLocation;
+    const scrollTop = document.documentElement.scrollTop;
+    if (scrollTop > 300) {
+      current.style.opacity = 0
+    }
+  }
+
+  useEffect(() => {
+
+    window.addEventListener("scroll", handleFadeOut)
+    return () => {
+      window.addEventListener("scroll", handleFadeOut)
+    }
+  })
+
   return (
 
     <div className="landing">
@@ -15,14 +34,13 @@ function Landing() {
         <div className="landing_contents">
           <div className="landing_inner">
             <div>
-              <span className="landing_title">
+              <span className="landing_title" ref={titleLocation}>
                 코딩에서 인생을 배우다.
               </span>
               <div className="scrollDown">
                 <span><FiChevronDown /></span>
               </div>
             </div>
-
           </div>
         </div>
       </div>

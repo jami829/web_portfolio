@@ -8,6 +8,7 @@ import profileImg from "../img/profile.jpg";
 
 //animation
 import useScrollFadeIn from "../components/useScrollFadeIn";
+import useScrollFadeOut from "../components/useScrollFadeOut";
 import useScrollAnimation from "../components/useScrollAnimation";
 
 function About() {
