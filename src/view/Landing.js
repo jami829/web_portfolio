@@ -13,8 +13,14 @@ function Landing() {
   const handleFadeOut = () => {
     const { current } = titleLocation;
     const scrollTop = document.documentElement.scrollTop;
+    current.style.transition = 'all .5s';  // transition 부드럽게 해줌
+
+    // fade in-out
     if (scrollTop > 300) {
       current.style.opacity = 0
+    }
+    else {
+      current.style.opacity = 1
     }
   }
 
@@ -33,8 +39,8 @@ function Landing() {
       <div className="landing_container">
         <div className="landing_contents">
           <div className="landing_inner">
-            <div>
-              <span className="landing_title" ref={titleLocation}>
+            <div ref={titleLocation}>
+              <span className="landing_title">
                 코딩에서 인생을 배우다.
               </span>
               <div className="scrollDown">
