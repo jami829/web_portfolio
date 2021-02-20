@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //css
 import "../css/About.scss";
@@ -11,6 +11,7 @@ import useScrollFadeIn from "../components/useScrollFadeIn";
 import useScrollAnimation from "../components/useScrollAnimation";
 
 function About() {
+
   return (
     <div className="About">
       <div className="about-inner">
@@ -26,6 +27,7 @@ function About() {
             <div>
             <p>
             <div className="introduce1" {...useScrollAnimation()}>
+
             안녕하세요 :)
             </div>
           {/* <div> */}

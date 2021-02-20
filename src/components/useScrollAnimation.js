@@ -2,23 +2,24 @@ import React, { useCallback, useEffect, useRef } from "react";
 
 
 
+// const useScrollAnimation = (aniName = "", duration = 1, timingFunction = "", delay = 0, iterationCount = "") => {
 const useScrollAnimation = () => {
   const element = useRef();
 
-  const handleDirection = (name) => {
-    switch (name) {
-      case 'up':
-        return 'translate3d(0, 50%, 0)';
-      case 'down':
-        return 'translate3d(0, -50%, 0)'
-      case 'left':
-        return 'translate3d(50%, 0, 0)'
-      case 'right':
-        return 'translate3d(-50%, 0, 0)'
-      default:
-        return;
-    };
-  };
+  // const handleDirection = (name) => {
+  //   switch (name) {
+  //     case 'up':
+  //       return 'translate3d(0, 50%, 0)';
+  //     case 'down':
+  //       return 'translate3d(0, -50%, 0)'
+  //     case 'left':
+  //       return 'translate3d(50%, 0, 0)'
+  //     case 'right':
+  //       return 'translate3d(-50%, 0, 0)'
+  //     default:
+  //       return;
+  //   };
+  // };
 
   const handleScroll = useCallback(([entry]) => {
     const { current } = element;
@@ -33,11 +34,11 @@ const useScrollAnimation = () => {
 
       // current.style.color = 'rgba(255, 255, 255, 255)';
       current.style.animationPlayState = "running";
-      // current.style.animationName = "stack_typing";
+      // current.style.animationName = `${aniName}`;
       // current.style.animationDutarion = `${duration}s`;
-      current.style.animationTimingFunction = 'steps(25, end)';
+      // current.style.animationTimingFunction = `${timingFunction}`;
       // current.style.animationDelay = `${delay}s`
-      current.style.animationIterationCount = "inherit"
+      // current.style.animationIterationCount = `${iterationCount}`
     }
   }, [])
 
