@@ -32,7 +32,7 @@ function Landing() {
       // current.style.animationName = 'display-down'
       current.style.opacity = 0
       // current.style.visibility = 'hidden'
-      setTimeout(visibleFuncNone, 510)
+      setTimeout(visibleFuncNone, 510)  // display none으로 설정하면 엘리먼트자체가 사라지므로 transiton 줄 시간자체가 1도 없기 때문에 setTimeout사용
       // current.style.display = "none"
       // current.style.animationPlayState = 'init'
     }
