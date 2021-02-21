@@ -50,6 +50,7 @@ function Landing() {
 
     window.addEventListener("scroll", handleFadeOut)
     return () => {
+
       window.addEventListener("scroll", handleFadeOut)
     }
   })
