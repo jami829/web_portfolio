@@ -22,7 +22,7 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
 
   const handleScroll = useCallback(([entry]) => {
     const { current } = element;
-    console.log("entry", entry.isIntersecting)
+    // console.log("entry", entry.isIntersecting)
     if (entry.isIntersecting) {
       current.style.transitionProperty = 'all';
       current.style.transitionDuration = `${duration}s`;
@@ -34,8 +34,6 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
     else {
       current.style.opacity = 0;
       current.style.transform = 'translate3d(0, -50%, 0)'
-      // current.style.transform = "handleDirection(direction)"
-
     }
   }, [])
 

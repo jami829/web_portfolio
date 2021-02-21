@@ -36,7 +36,8 @@ function Landing() {
       // current.style.display = "none"
       // current.style.animationPlayState = 'init'
     }
-    else if (scrollTop === 0 || scrollTop < 300) {
+    else {
+      // else if (scrollTop === 0 || scrollTop < 300) {
       // current.style.animationPlayState = 'running'
       // current.style.animationName = 'display-up'
       // current.style.visibility = 'visible'
@@ -47,7 +48,6 @@ function Landing() {
   }
 
   useEffect(() => {
-
     window.addEventListener("scroll", handleFadeOut)
     return () => {
 
