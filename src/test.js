@@ -29,7 +29,6 @@ const testTyping = () => {
       //   text
       // }
     }
-
   }
 
 

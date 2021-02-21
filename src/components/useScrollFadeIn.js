@@ -31,12 +31,17 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
       current.style.opacity = 1;
       current.style.transform = 'translate3d(0, 0, 0)';
     }
+    else {
+      // current.style.opacity = 0;
+      // current.style.transform = "handleDirection(direction)"
+
+    }
   }, [])
 
   useEffect(() => {
     let observer;
     const { current } = element;
-
+    console.log("isIntersecting", current)
     if (current) {
       observer = new IntersectionObserver(handleScroll, { threshold: 0.7 });
       observer.observe(current);
@@ -48,7 +53,6 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
   return {
     ref: element,
     style: {
-      animationPlayState: "paused",
       opacity: 0,
       transform: handleDirection(direction),
     }
