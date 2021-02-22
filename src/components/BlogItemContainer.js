@@ -26,7 +26,7 @@ const TOTAL_SLIDES = 8;
 
 function BlogItemContainer() {
 
-  let sliderArr = [1, 2, 3, 4]
+  // let sliderArr = [1, 2, 3, 4]
   const slideRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -34,10 +34,10 @@ function BlogItemContainer() {
   const { current } = slideRef;
 
   const goLeft = () => {
-    setCurrentSlide(currentSlide + 100)
+    currentSlide === 0 ? setCurrentSlide(-100 * (TOTAL_SLIDES)) : setCurrentSlide(currentSlide + 100)
   }
   const goRight = () => {
-    setCurrentSlide(currentSlide - 100)
+    currentSlide === -100 * (TOTAL_SLIDES) ? setCurrentSlide(0) : setCurrentSlide(currentSlide - 100)
   }
 
 
