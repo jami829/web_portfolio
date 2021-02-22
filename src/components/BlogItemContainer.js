@@ -27,17 +27,41 @@ const TOTAL_SLIDES = 8;
 function BlogItemContainer() {
 
   // let sliderArr = [1, 2, 3, 4]
-  const slideRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
-
-
-  const { current } = slideRef;
 
   const goLeft = () => {
     currentSlide === 0 ? setCurrentSlide(-100 * (TOTAL_SLIDES)) : setCurrentSlide(currentSlide + 100)
   }
   const goRight = () => {
     currentSlide === -100 * (TOTAL_SLIDES) ? setCurrentSlide(0) : setCurrentSlide(currentSlide - 100)
+  }
+
+  const moveToSlide1 = () => {
+    setCurrentSlide(0)
+  }
+  const moveToSlide2 = () => {
+    setCurrentSlide(-100)
+  }
+  const moveToSlide3 = () => {
+    setCurrentSlide(-200)
+  }
+  const moveToSlide4 = () => {
+    setCurrentSlide(-300)
+  }
+  const moveToSlide5 = () => {
+    setCurrentSlide(-400)
+  }
+  const moveToSlide6 = () => {
+    setCurrentSlide(-500)
+  }
+  const moveToSlide7 = () => {
+    setCurrentSlide(-600)
+  }
+  const moveToSlide8 = () => {
+    setCurrentSlide(-700)
+  }
+  const moveToSlide9 = () => {
+    setCurrentSlide(-800)
   }
 
 
@@ -70,40 +94,40 @@ function BlogItemContainer() {
       </div>
       <div className="moveDirect">
         {currentSlide === 0
-          ? <div className="cycle" />
-          : <div className="not-here" />
+          ? <div className="cycle" onClick={moveToSlide1} />
+          : <div className="not-here" onClick={moveToSlide1} />
         }
         {currentSlide === -100
-          ? <div className="cycle" />
-          : <div className="not-here" />
+          ? <div className="cycle" onClick={moveToSlide2} />
+          : <div className="not-here" onClick={moveToSlide2} />
         }
         {currentSlide === -200
-          ? <div className="cycle" />
-          : <div className="not-here" />
+          ? <div className="cycle" onClick={moveToSlide3} />
+          : <div className="not-here" onClick={moveToSlide3} />
         }
         {currentSlide === -300
-          ? <div className="cycle" />
-          : <div className="not-here" />
+          ? <div className="cycle" onClick={moveToSlide4} />
+          : <div className="not-here" onClick={moveToSlide4} />
         }
         {currentSlide === -400
-          ? <div className="cycle" />
-          : <div className="not-here" />
+          ? <div className="cycle" onClick={moveToSlide5} />
+          : <div className="not-here" onClick={moveToSlide5} />
         }
         {currentSlide === -500
-          ? <div className="cycle" />
-          : <div className="not-here" />
+          ? <div className="cycle" onClick={moveToSlide6} />
+          : <div className="not-here" onClick={moveToSlide6} />
         }
         {currentSlide === -600
-          ? <div className="cycle" />
-          : <div className="not-here" />
+          ? <div className="cycle" onClick={moveToSlide7} />
+          : <div className="not-here" onClick={moveToSlide7} />
         }
         {currentSlide === -700
-          ? <div className="cycle" />
-          : <div className="not-here" />
+          ? <div className="cycle" onClick={moveToSlide8} />
+          : <div className="not-here" onClick={moveToSlide8} />
         }
         {currentSlide === -800
-          ? <div className="cycle" />
-          : <div className="not-here" />
+          ? <div className="cycle" onClick={moveToSlide9} />
+          : <div className="not-here" onClick={moveToSlide9} />
         }
 
       </div>
