@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 // css
 import "../css/Stack.scss";
@@ -22,6 +22,7 @@ import s3 from "../img/stack/s3.png"
 import scss from "../img/stack/scss.png"
 import ts from "../img/stack/ts.png"
 import vue from "../img/stack/vue.png"
+import { Script } from 'vm';
 
 
 
@@ -30,26 +31,44 @@ import vue from "../img/stack/vue.png"
 
 function Stack() {
 
-  // const saTriggerMargin = 300;
-  // const saElementList = document.querySelectorAll('.sa')
-  // const saElementListArr = Array.from('saElementList')
+  const [stacks, setStacks] = useState(['React (hooks)', 'Vue.js', 'Redux', 'Vuex', 'Type-Script', 'SCSS'])
+  const typed = useRef();
 
-  // const saFunc = function() {
-  //   for (const element of saElementListArr) {
-  //     if (!element.classList.contains('show')) {
-  //       if (window.innerHeight > element.getBoundingClientRect().top + saTriggerMargin) {
-  //         element.classList.add('show');
-  //       }
-  //     }
-  //   }
-  // }
+  let i = 0, j = 0
+  const speed = 150
 
 
+  const txtnum = () => {
+    j === stacks.length - 1
+      ? j = 0
+      : j++
+  }
 
-  // useEffect(() => {
-  //   window.addEventListener('load', saFunc)
-  //   window.addEventListener('scroll', saFunc)
-  // }, [])
+  const typeWriter = () => {
+    const { current } = typed
+    return (
+
+      i < stacks[j].length
+        ? (current.innerHTML += stacks[j].charAt(i), i++, setTimeout(typeWriter, speed))
+        : setTimeout(remove, 3000)
+    )
+  }
+
+  const remove = () => {
+    const { current } = typed
+    return (
+
+      i >= 0
+        ? (current.innerHTML = current.innerHTML.slice(0, i), i--, setTimeout(remove, speed))
+        : (typeWriter(), txtnum())
+    )
+  }
+
+  useEffect(() => {
+
+    console.log("stacks", stacks)
+    typeWriter()
+  }, [])
 
   return (
     <div className="Stack">
@@ -57,10 +76,11 @@ function Stack() {
         <div className="stack_inner">
           <div className="stack_title">
             <div>
-              <span {...useScrollAnimation()}>
+              <div {...useScrollAnimation()}>
 
-                저는 이러한 스택을 사용합니다.
-              </span>
+                저는 <strong ref={typed}></strong> 가능합니다.
+
+              </div>
             </div>
           </div>
           <div className="stack_box">
