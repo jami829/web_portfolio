@@ -58,13 +58,54 @@ function BlogItemContainer() {
         {posts.map((post, idx) => {
           if (idx <= 8) {
             return (
+
               <div style={{ transform: `translateX(${currentSlide}%)` }}>
                 <Temp key={idx} post={post} />
               </div>
+
             )
           }
           return
         })}
+      </div>
+      <div className="moveDirect">
+        {currentSlide === 0
+          ? <div className="cycle" />
+          : <div className="not-here" />
+        }
+        {currentSlide === -100
+          ? <div className="cycle" />
+          : <div className="not-here" />
+        }
+        {currentSlide === -200
+          ? <div className="cycle" />
+          : <div className="not-here" />
+        }
+        {currentSlide === -300
+          ? <div className="cycle" />
+          : <div className="not-here" />
+        }
+        {currentSlide === -400
+          ? <div className="cycle" />
+          : <div className="not-here" />
+        }
+        {currentSlide === -500
+          ? <div className="cycle" />
+          : <div className="not-here" />
+        }
+        {currentSlide === -600
+          ? <div className="cycle" />
+          : <div className="not-here" />
+        }
+        {currentSlide === -700
+          ? <div className="cycle" />
+          : <div className="not-here" />
+        }
+        {currentSlide === -800
+          ? <div className="cycle" />
+          : <div className="not-here" />
+        }
+
       </div>
       <Button onClick={goLeft} id="goLeft">Previous Slide</Button>
       <Button onClick={goRight} id='goRight'>Next Slide</Button>
