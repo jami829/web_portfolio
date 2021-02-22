@@ -4,6 +4,8 @@ import { blogDatas } from '../asset/blogData'
 import Temp from './Temp';
 import styled from 'styled-components';
 
+import useSlider from "../components/useSlider";
+
 // css -> blog.scss
 
 const Button = styled.button`
@@ -24,50 +26,48 @@ const TOTAL_SLIDES = 8;
 
 function BlogItemContainer() {
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  let sliderArr = [1, 2, 3, 4]
   const slideRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+
+  const { current } = slideRef;
+
+  const goLeft = () => {
+    setCurrentSlide(currentSlide + 100)
+  }
+  const goRight = () => {
+    setCurrentSlide(currentSlide - 100)
+  }
+
 
   // nextSlide와 prevSlide를 통해 현재 보여조는 슬라이드를 정할 수 있도록 함
 
-  const nextSlide = () => {
-    if (currentSlide >= TOTAL_SLIDES) {  // 더 이상 넘어갈 슬라이드가 없으면 슬라이드 초기화
-      setCurrentSlide(0);
-    }
-    else {
-      setCurrentSlide(currentSlide + 1);
-    }
-  }
-
-  const prevSlide = () => {
-    if (currentSlide === 0) {
-      setCurrentSlide(TOTAL_SLIDES);
-    }
-    else {
-      setCurrentSlide(setCurrentSlide(currentSlide - 1))
-    }
-  }
-
-  useEffect(() => {
-    slideRef.current.style.transition = "all 0.5s ease-in-out";
-    slideRef.current.style.transform = `translateX(-${currentSlide}00%)`; // 백틱을 사용하여 슬라이드로 이동하는 애니메이션을 만듭니다.
-  }, [currentSlide]);
+  // useEffect(() => {
+  //   const { current } = slideRef;
+  //   // current.style.transition = "all 0.5s ease-in-out";
+  //   current.style.transform = `translateX(${currentSlide}%)`; // 백틱을 사용하여 슬라이드로 이동하는 애니메이션을 만듭니다.
+  // }, [currentSlide]);
 
   const posts = blogDatas.channel.item;
-  console.log(blogDatas)
+  // console.log(blogDatas)
   return (
     <div id="item-list-container">
-      <div id="item-list-inner" ref={slideRef}>
-
+      {currentSlide}
+      <div id="item-list-inner">
         {posts.map((post, idx) => {
-          if (idx < 9) {
-            // return <BlogItem key={idx} post={post} />
-            return <Temp key={idx} post={post} />
+          if (idx <= 8) {
+            return (
+              <div style={{ transform: `translateX(${currentSlide}%)` }}>
+                <Temp key={idx} post={post} />
+              </div>
+            )
           }
           return
         })}
       </div>
-      <Button onClick={prevSlide}>Previous Slide</Button>
-      <Button onClick={nextSlide}>Next Slide</Button>
+      <Button onClick={goLeft} id="goLeft">Previous Slide</Button>
+      <Button onClick={goRight} id='goRight'>Next Slide</Button>
     </div>
   )
 }
