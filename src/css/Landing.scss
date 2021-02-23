@@ -16,50 +16,73 @@
     // table-layout: fixed;
     
     
-  }
-  .landing_contents{
-    display: table-cell;
-    vertical-align: middle;
-    
-    .landing_inner {
-      // display: flex !important;
-      // justify-content: center !important;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      animation-name: title;
-      animation-iteration-count: both;
+  
+    .landing_contents{
+      display: table-cell;
+      vertical-align: middle;
       
-      .landing_title {
-        // text-align: center;
-        display: inline-block;
-        color: white;
-        overflow: hidden;
-        border-right: .15em solid orange;
-        white-space: nowrap;  // 콘텐츠가 한 줄에 계속 담기도록
-        margin: 0 auto;  // 가운데 고정시켜 애니메이션이 실행되도록
-        letter-spacing: .15em; // 글자간 간격
+      .landing_inner {
+        // display: flex !important;
+        // justify-content: center !important;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation-name: title;
+        animation-iteration-count: both;
         
-        animation: typing 2s steps(25, end), blink-caret .75s step-end infinite;
-        
-
-      
-      }
-      .scrollDown {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-        span {
-          opacity: 0;
-          animation: scroll 2s linear 2.5s infinite;
-
-          &:hover {
-            cursor: pointer;
-          }
+        .landing_title {
+          // text-align: center;
+          display: inline-block;
+          color: white;
+          overflow: hidden;
+          border-right: .15em solid orange;
+          white-space: nowrap;  // 콘텐츠가 한 줄에 계속 담기도록
+          margin: 0 auto;  // 가운데 고정시켜 애니메이션이 실행되도록
+          letter-spacing: .15em; // 글자간 간격
+          
+          animation: typing 2s steps(25, end), blink-caret .75s step-end infinite;
         }
-      }
 
+        // .scrollDown {
+        //   display: flex;
+        //   justify-content: center;
+        //   margin-top: 30px;
+        //   span {
+        //     opacity: 0;
+        //     animation: scroll 2s linear 2.5s infinite;
+
+        //   }
+        //   &:hover {
+        //     cursor: pointer;
+        //     opacity: 1;
+        //     color: whitesmoke;
+        //   }
+        // }
+
+      }
+    }
+  }
+  .scrollDown-mouse {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    // display: fixed;
+    // justify-content: center;
+    // margin-top: 30px;
+    div {
+      
+      display: flex;
+      span {
+        opacity: 0;
+        animation: scroll-mouse 2s linear 2.5s both;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+      color: whitesmoke;
     }
   }
 }
@@ -85,45 +108,55 @@
   }
 }
 
-@keyframes scroll {
+@keyframes scroll-mouse {
   from {
-    color: whitesmoke;
-    
-    // transition: ease-in;
-    text-shadow: 0 0 40px whitesmoke;
     opacity: 0;
-
   }
-
-  25%{
-    color: whitesmoke;
-    
-    // transition: ease-in;
-    text-shadow: 0 0 40px whitesmoke;
-    opacity: 0.5;
-  }
-
-  50%{
-    color: whitesmoke;
+  
+  to {
     opacity: 1;
   }
-
-  75% {
-    color: whitesmoke;
-    
-    // transition: ease-in;
-    text-shadow: 0 0 40px whitesmoke;
-    opacity: 0.5;
-  }
-
-  to {
-    color: whitesmoke;
-    
-    // transition: ease-in;
-    text-shadow: 0 0 10px whitesmoke;
-    opacity: 0.2;
-  }
 }
+
+// @keyframes scroll {
+//   from {
+//     color: whitesmoke;
+    
+//     // transition: ease-in;
+//     text-shadow: 0 0 40px whitesmoke;
+//     opacity: 0;
+
+//   }
+
+//   25%{
+//     color: whitesmoke;
+    
+//     // transition: ease-in;
+//     text-shadow: 0 0 40px whitesmoke;
+//     opacity: 0.5;
+//   }
+
+//   50%{
+//     color: whitesmoke;
+//     opacity: 1;
+//   }
+
+//   75% {
+//     color: whitesmoke;
+    
+//     // transition: ease-in;
+//     text-shadow: 0 0 40px whitesmoke;
+//     opacity: 0.5;
+//   }
+
+//   to {
+//     color: whitesmoke;
+    
+//     // transition: ease-in;
+//     text-shadow: 0 0 10px whitesmoke;
+//     opacity: 0.2
+//   }
+// }
 
 // @keyframes title {
 //   from {
@@ -136,4 +169,5 @@
 //     opacity: 0;
 //   }
 // }
+
 

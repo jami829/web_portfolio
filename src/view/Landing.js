@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 
+import Mousey from "../components/Mousey";
 
 
 // css
@@ -9,6 +10,7 @@ import "../css/Landing.scss"
 function Landing() {
 
   const titleLocation = useRef();
+  const mouseScrollLocation = useRef();
 
   // const visibleFunc = (opacityNum = 0) => {
   const visibleFuncNone = () => {
@@ -25,7 +27,7 @@ function Landing() {
   const handleFadeOut = () => {
     const { current } = titleLocation;
     const scrollTop = document.documentElement.scrollTop;
-    current.style.transition = 'all .5s';  // transition 부드럽게 해줌
+    current.style.transition = 'all .5s';  // transition 속도를 조절하여 부드럽게 해줌
 
     // fade in-out
     if (scrollTop >= 300) {
@@ -45,6 +47,16 @@ function Landing() {
       setTimeout(visibleFuncBlock, 520)
       // current.style.display = 'inline-block'
     }
+
+    if (scrollTop >= 50) {
+      mouseScrollLocation.current.style.transition = 'all .5s'
+      mouseScrollLocation.current.style.opacity = 0
+    }
+    else {
+      mouseScrollLocation.current.style.transition = 'all .5s'
+      mouseScrollLocation.current.style.opacity = 1
+    }
+
   }
 
   useEffect(() => {
@@ -66,11 +78,17 @@ function Landing() {
               <span className="landing_title">
                 코딩에서 인생을 배우다.
               </span>
-              <div className="scrollDown">
+
+              {/* <div className="scrollDown">
                 <span><FiChevronDown /></span>
-              </div>
+              </div> */}
             </div>
           </div>
+        </div>
+      </div>
+      <div className="scrollDown-mouse" ref={mouseScrollLocation}>
+        <div>
+          <span><Mousey /></span>
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@ import s3 from "../img/stack/s3.png"
 import scss from "../img/stack/scss.png"
 import ts from "../img/stack/ts.png"
 import vue from "../img/stack/vue.png"
-import { Script } from 'vm';
+
 
 
 

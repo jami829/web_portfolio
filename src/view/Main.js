@@ -10,7 +10,6 @@ import Stack from "./Stack";
 
 
 
-
 function Main() {
 
 
@@ -18,6 +17,7 @@ function Main() {
 
   return (
     <div>
+
       <section>
         <Landing />
       </section>
