@@ -9,6 +9,7 @@
   color: white;
   
   .project-inner {
+    position: relative;
     width: 80%;
     padding: 7% 7%;
     
@@ -39,17 +40,60 @@
         position: absolute;
         overflow: hidden;
         width: 600px;
-        top: 20%;
-        left: 4%;
+        top: 10%;
+        left: 6%;
         div {
           display: flex;
           
         }
         img {
-          width: 100%;
+          max-width: 100%;
           object-fit: cover;
         }
       }
+      .moveDirect-pro {
+        color: whitesmoke;
+        position: absolute;
+        top: 108%;
+        right: 15%;
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+        font-size: .8rem;
+        
+        .here-pro{
+          color: #F3CB22;
+        }
+        .not-here-pro{
+          color: rgb(182, 179, 179);
+        }
+      }
+      %btn-style {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5%;
+        height: 100%;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 30px;
+        color: rgba(128, 128, 128, 0.486);
+        &:hover {
+          cursor: pointer;
+          background: rgba(0, 0, 0, 0.11);
+          color: whitesmoke;
+        }
+      }
+      #left-btn {
+        left: 0;
+        @extend %btn-style
+      }
+      #right-btn {
+        right: 0;
+        @extend %btn-style
+      }
     }
+
   }
 }
