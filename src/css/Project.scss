@@ -35,30 +35,63 @@
       height: 330px;  
       background: whitesmoke;
       color: black;
+      display: flex;
       
       .img-box {
         position: absolute;
-        overflow: hidden;
         width: 600px;
         top: 10%;
         left: 6%;
+        // overflow: hidden;
+        overflow: hidden;
         div {
           display: flex;
-          
         }
         img {
           max-width: 100%;
           object-fit: cover;
         }
       }
+      .contents-box {
+        position: absolute;
+        width: 50%;
+        top: 35%;
+        right: -2%;
+        .contents {
+
+          strong {
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+          }
+          .stacks {
+            color: gray;
+            font-size: 0.7rem;
+            word-spacing: 10px;
+          }
+          .platform {
+            margin-top: 40px;
+            span {
+              margin-right: 20px;
+              a {
+                text-decoration: none;
+                color: #282828;
+              }
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
       .moveDirect-pro {
         color: whitesmoke;
         position: absolute;
         top: 108%;
-        right: 15%;
-        width: 100px;
+        right: 16%;
+        // width: 100px;
+        width: 13%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         font-size: .8rem;
         
         .here-pro{
@@ -68,7 +101,7 @@
           }
         }
         .not-here-pro{
-          color: rgb(182, 179, 179);
+          color: rgb(92, 89, 89);
           &:hover {
             cursor: pointer;
           }
