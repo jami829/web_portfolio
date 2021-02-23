@@ -85,37 +85,42 @@
       text-align: center;
       margin: 0 auto;
       .title-blog {
-        margin: 40px 0;
+        margin: 50px 0;
+        margin-top: 10px;
         color: #95A4A3;
         font-size: 1.5rem;
         letter-spacing: 3px;
       }
         #item-list-inner {
-          overflow: hidden;
+          // overflow: hidden;
           // display: inline-block;
-          width: 100%;
+          // width: 100%;
+          width: 610px;
           display: flex;
-
+          overflow: hidden;
           // height: 100%;
           // display: grid;
           // grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
           // grid-gap: 70px;
           text-align: center;
           .blog-item-box {
-          // margin:0 30%;
-          // text-align: center;
-          transition: all .8s ease-in-out;
-          top: 0;
-          min-width: 100%;
-          position: relative;
-          display: flex;
-          justify-content: center;
-          .post {
+            transition: all 1s ease-in-out;
+            // margin:0 1px;
+            // text-align: center;
             
-              width: 600px;
+            top: 0;
+            min-width: 100%;
+            position: relative;
+            // display: flex; 
+            
+            justify-content: center;
+            // width: 600px;
+            .post {
+            // overflow: hidden;
+              // min-width: 100%;
               border: 1px solid #d9d9d97a;
               position: relative;
-              max-width: 100%;
+              // max-width: 100%;
             a {
               text-decoration: none;
             }

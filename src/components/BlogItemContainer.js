@@ -33,6 +33,7 @@ function BlogItemContainer() {
   // 이동 & 더이상 이동할 곳 없으면 초기화하여 다시 처음부터 돌게.
   const goLeft = () => {
     currentSlide === 0 ? setCurrentSlide(-100 * (TOTAL_SLIDES)) : setCurrentSlide(currentSlide + 100)
+
   }
   const goRight = () => {
     currentSlide === -100 * (TOTAL_SLIDES) ? setCurrentSlide(0) : setCurrentSlide(currentSlide - 100)
