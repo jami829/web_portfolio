@@ -63,9 +63,15 @@
         
         .here-pro{
           color: #F3CB22;
+          &:hover {
+            cursor: pointer;
+          }
         }
         .not-here-pro{
           color: rgb(182, 179, 179);
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
       %btn-style {

@@ -24,10 +24,17 @@ function Project() {
     currentSlide === -100 * TOTAL_SLIDES ? setCurrentSlide(0) : setCurrentSlide(currentSlide - 100)
   }
 
+  const handlePage1 = () => {
+    setCurrentSlide(0)
+  }
+  const handlePage2 = () => {
+    setCurrentSlide(-100)
+  }
   useEffect(() => {
     // const { current } = slideRef
     // current.style.transition = "all .5s ease-in-out"
     // current.style.transform = `translateX(${currentSlide}%)`
+
 
     setTimeout(goRight, 5000)
   }, [currentSlide])
@@ -55,11 +62,11 @@ function Project() {
           <div className="moveDirect-pro">
             {currentSlide === 0
               ? <div className="here-pro">01</div>
-              : <div className="not-here-pro">01</div>
+              : <div className="not-here-pro" onClick={handlePage1}>01</div>
             }
             {currentSlide === -100
               ? <div className="here-pro">02</div>
-              : <div className="not-here-pro">02</div>
+              : <div className="not-here-pro" onClick={handlePage2}>02</div>
             }
 
           </div>
