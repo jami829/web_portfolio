@@ -51,7 +51,7 @@ function Project() {
       <div className="project-inner">
         <div className="project-box-1">
           <div className="project-title">
-            Here's portfolio
+            Here's Project
           </div>
           <div className="project-subtitle">
             프로젝트를 확인해보세요!

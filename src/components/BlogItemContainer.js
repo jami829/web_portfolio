@@ -81,13 +81,13 @@ function BlogItemContainer() {
   // console.log(blogDatas)
   return (
     <div id="item-list-container">
-      {currentSlide}
+      <div className="title-blog">CHECK SOME OF MY POSTS</div>
       <div id="item-list-inner">
         {posts.map((post, idx) => {
           if (idx <= 8) {
             return (
 
-              <div style={{ transform: `translateX(${currentSlide}%)` }}>
+              <div className="blog-item-box" style={{ transform: `translateX(${currentSlide}%)` }}>
                 <Temp key={idx} post={post} />
               </div>
 

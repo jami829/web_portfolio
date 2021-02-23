@@ -1,15 +1,19 @@
 .blog {
   width: 100%;
-  height: 140vh;
+  height: 100vh;
   padding: 50px 0;
 
   // text-align: center;
 
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  background-color: rgba(255, 255, 255, 0.23);
+  // background-color: rgba(255, 255, 255, 0.23);
+  background: #EBEEEE;
+  position: relative;
+  
+  
   
   // #item-list-container {
   //     // width: 100%;
@@ -71,42 +75,52 @@
   //       }
   //     }
   //   }
-  #item-list-container {
+    #item-list-container {
 
       // padding: 7%;  
     
       // width: 30.75%;
       // width: 100%;
-      overflow: hidden;
+      // overflow: hidden;
+      text-align: center;
+      margin: 0 auto;
+      .title-blog {
+        margin: 40px 0;
+        color: #95A4A3;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+      }
         #item-list-inner {
+          overflow: hidden;
           // display: inline-block;
-          width: 100% ;
+          width: 100%;
           display: flex;
-          margin: 0;
-          padding: 0;
-          position: relative;
+
           // height: 100%;
           // display: grid;
           // grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
           // grid-gap: 70px;
-        div {
-
-          transition: all .3s ease;
-          position: relative;
+          text-align: center;
+          .blog-item-box {
+          // margin:0 30%;
+          // text-align: center;
+          transition: all .8s ease-in-out;
           top: 0;
           min-width: 100%;
-          // width: 100%;
-          // border: 1px solid #d9d9d97a;
-          border-radius: 6px;
-
+          position: relative;
+          display: flex;
+          justify-content: center;
           .post {
+            
+              width: 600px;
+              border: 1px solid #d9d9d97a;
+              position: relative;
+              max-width: 100%;
             a {
               text-decoration: none;
             }
-            // overflow: hidden;
             .post-img {
               display: block;
-              width: 100%;
               height: 260px;
               
               img {
@@ -119,12 +133,11 @@
             .post-info {
               background-color: whitesmoke;
               color: black;
-              min-width: inherit;
               height: 50px;
               padding: 30px;
               font-size: 17px;
               
-              // white-space: nowrap;
+              white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
               p {
@@ -134,10 +147,8 @@
             }
 
             &:hover {
-              
               cursor: pointer;
               transition: all .3s ease;
-              
               box-shadow: 12px 12px 12px rgba(38, 38, 38, .2);
               top: -10px;
             }
@@ -148,7 +159,7 @@
           top: 50%;
           transform: translateY(-50%);
           width: 5%;
-          height: 100%;
+          height: 5%;
           background: none;
           border: none;
           outline: none;
@@ -156,28 +167,30 @@
           color: rgba(128, 128, 128, 0.486);
           &:hover{
             cursor: pointer;
-            background: rgba(0, 0, 0, 0.11);
-            color: whitesmoke;
+            // background: rgba(0, 0, 0, 0.11);
+            // color: whitesmoke;
+            color: orange;
           }
         }
         #goLeft {
-          left: 0;
+          left: 10%;
           @extend %btn-styles;
         }
         #goRight {
-          right: 0;
+          right: 10%;
           @extend %btn-styles;
         }
       }
       .moveDirect {
-        width: 20%;
+        width: 200px;
         margin: 30px auto;
         display: flex;
         justify-content: space-evenly;
         .cycle {
           width: 10px;
           height: 10px;
-          background: whitesmoke;
+          // background: whitesmoke;
+          background: orange;
           border-radius: 10px;
 
           &:hover {
