@@ -1,12 +1,13 @@
 #stack {
   position: relative;
-  width: 100%;
-  height: 100vh;
-  background: #28282854;
+  width: 100vw;
+  height: 100%;
+  background: #28282879;
   display: flex;
   justify-content: center;  
   .arrowbox-container {
-    padding: 100px;
-
+    width: 60%;
+    padding: 50px;
+    position: relative;
   }
 }

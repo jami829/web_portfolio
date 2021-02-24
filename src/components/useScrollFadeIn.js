@@ -32,8 +32,9 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
       current.style.transform = 'translate3d(0, 0, 0)';
     }
     else {
+      current.style.transform = handleDirection(direction);
       current.style.opacity = 0;
-      current.style.transform = 'translate3d(0, -50%, 0)'
+      // current.style.transform = 'translate3d(0, -50%, 0)'
     }
   }, [])
 

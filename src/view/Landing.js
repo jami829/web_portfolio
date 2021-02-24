@@ -7,7 +7,7 @@ import Mousey from "../components/Mousey";
 // css
 import "../css/Landing.scss"
 
-function Landing() {
+function Landing(props) {
 
   const titleLocation = useRef();
   const mouseScrollLocation = useRef();
@@ -88,7 +88,7 @@ function Landing() {
       </div>
       <div className="scrollDown-mouse" ref={mouseScrollLocation}>
         <div>
-          <span><Mousey /></span>
+          <span onClick={props.handleScrollBtn}><Mousey /></span>
         </div>
       </div>
     </div>

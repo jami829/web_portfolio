@@ -1,0 +1,28 @@
+.mind {
+  width: 100%;
+  height: 60vh;
+  background-color: rgba(245, 245, 245, 0.514);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .mind-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+    .mind-icons-box {
+
+      .mind-icons {
+        width: 100px;
+  
+        img {
+          max-width: 100%;
+        }
+      }
+      .contents {
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -65,7 +65,7 @@ function About() {
             <div className="introduce-box2">
               <h1 {...useScrollFadeIn('up', 1, 1)}>
                 Contact
-            </h1>
+              </h1>
               <p {...useScrollFadeIn('up', 1, 0.5)}>이재훈</p>
               <p {...useScrollFadeIn('up', 1, 0.5)}>jami8291215@gmail.com</p>
               <p {...useScrollFadeIn('up', 1, 0.5)}>010-8751-3371</p>

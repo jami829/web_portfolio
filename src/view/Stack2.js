@@ -1,7 +1,10 @@
 import React from 'react';
 
+
 // components
-import ArrowBox from '../components/ArrowBox';
+import { ArrowBox, RightArrowBox } from '../components/ArrowBox';
+import useScrollFadeIn from '../components/useScrollFadeIn'
+// import RightArrowBox from '../components/ArrowBox';
 // css
 import "../css/Stack2.scss";
 
@@ -20,20 +23,33 @@ import s3 from "../img/stack/s3.png"
 import scss from "../img/stack/scss.png"
 import ts from "../img/stack/type.png"
 import vue from "../img/stack/vue.png"
+import me from "../img/profile.jpg"
+
 
 function Stack2() {
   return (
     <div id="stack">
-      <div className="arrowbox-container">``
+      <div className="arrowbox-container" >
+        {/* <div className="arrowbox-container" {...useScrollFadeIn('up', 1, 1)}> */}
 
-        <ArrowBox img={react} contents="안녕하세요" />
-        <ArrowBox img={redux} contents="redux" />
-        <ArrowBox img={vue} contents="vue" />
-        {/* <ArrowBox img={} contents="vuex" /> */}
-        <ArrowBox img={ts} contents="타입스크립트" />
-
+        <div  {...useScrollFadeIn('left', 1, 0)}>
+          <ArrowBox img={react} contents="안녕하세요" />
+        </div>
+        <div {...useScrollFadeIn('left', 1, .3)} >
+          <ArrowBox img={redux} contents="redux" />
+        </div>
+        <div {...useScrollFadeIn('left', 1, .5)}>
+          <ArrowBox img={vue} contents="vue" />
+        </div>
+        <div {...useScrollFadeIn('left', 1, .8)}>
+          <ArrowBox img={ts} contents="타입스크립트" />
+        </div>
+        <div {...useScrollFadeIn('left', 1, 1)}>
+          <RightArrowBox img={me} contents="나dd" />
+        </div>
       </div>
     </div>
+
   )
 }
 

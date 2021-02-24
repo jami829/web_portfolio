@@ -3,7 +3,7 @@ import React from 'react';
 // css
 import "../css/ArrowBox.scss";
 
-function ArrowBox({ img, contents }) {
+export function ArrowBox({ img, contents }) {
   return (
     <div className="arrow">
       <div className="profile_photo">
@@ -16,4 +16,19 @@ function ArrowBox({ img, contents }) {
   )
 }
 
-export default ArrowBox;
+// export ArrowBox;
+
+export function RightArrowBox({ img, contents }) {
+  return (
+    <div className="right_arrow">
+      <div className="right_arrow_box">
+        {contents}
+      </div>
+      <div className="right_profile_photo">
+        <img src={img}></img>
+      </div>
+    </div>
+  )
+}
+
+// export RightArrowBox;

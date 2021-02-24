@@ -8,5 +8,33 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+
+  .App {
+    position: relative;
+    // .scollToTop-btn {
+    //   position: fixed;
+    //   // top: 92vh;
+    //   bottom: 10%;
+    //   right: 1.8%;
+    //   width: 30px;
+    //   height: 30px;
+    //   background: gray;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   color: white;
+      
+      
+    //   border-radius: 10px;
+
+    //   &:hover {
+    //     cursor: pointer;
+    //     width: 35px;
+    //     height: 35px;
+    //     background: whitesmoke;
+    //     transform: translateX(6%);
+    //   }
+    // }
+  }
 }
 
