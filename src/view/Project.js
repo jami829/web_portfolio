@@ -22,13 +22,14 @@ function Project() {
   const slideRef = useRef(null);
 
   const goLeft = () => {
+    clearTimeout(setTimeout(goRight, 4000))
     currentSlide === 0 ? setCurrentSlide(-100 * TOTAL_SLIDES) : setCurrentSlide(currentSlide + 100)
-
   }
   const goRight = () => {
+    clearTimeout(setTimeout(goRight, 4000))
     currentSlide === -100 * TOTAL_SLIDES ? setCurrentSlide(0) : setCurrentSlide(currentSlide - 100)
-
   }
+
 
   const handlePage1 = () => {
     setCurrentSlide(0)
@@ -37,15 +38,17 @@ function Project() {
     setCurrentSlide(-100)
   }
   useEffect(() => {
-    // const { current } = slideRef
-    // current.style.transition = "all .5s ease-in-out"
+    const { current } = slideRef
+    // current.style.transition = "all 10000s ease-in-out linear 5s"
     // current.style.transform = `translateX(${currentSlide}%)`
 
+    setTimeout(goRight, 4000);
+    return () => {
+      clearTimeout(setTimeout(goRight, 4000))
 
-    setTimeout(goRight, 4000)
-    // setTimeout(goLeft, 10000)
+    }
+    // clearInterval(goRight)
   }, [currentSlide])
-
   return (
     <div className="project">
       <div className="project-inner">

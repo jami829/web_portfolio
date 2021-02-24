@@ -46,10 +46,11 @@
         overflow: hidden;
         div {
           display: flex;
-        }
-        img {
-          max-width: 100%;
-          object-fit: cover;
+          // animation: slide-pro 20s linear infinite;
+          img {
+            max-width: 100%;
+            object-fit: cover;
+          }
         }
       }
       .contents-box {
@@ -136,3 +137,4 @@
 
   }
 }
+

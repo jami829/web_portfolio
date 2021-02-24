@@ -4,6 +4,7 @@ import Blog from "./Blog";
 import Landing from "./Landing";
 import Project from "./Project";
 import Stack from "./Stack";
+import Stack2 from "./Stack2";
 
 // components
 
@@ -27,7 +28,7 @@ function Main() {
       </section>
 
       <section>
-        <Stack />
+        <Stack2 />
       </section>
 
       <section>
