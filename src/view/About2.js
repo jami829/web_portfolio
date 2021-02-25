@@ -25,7 +25,7 @@ function About2() {
 
             <h1 {...useScrollFadeIn('up', 1, 0.2)}>About</h1>
 
-            <div className='about-contents'>
+            <div className='about-contents' {...useScrollFadeIn('none', 1, 0.4)}>
               <p>안녕하세요. 주니어 프론트엔드 개발자 <span>이재훈</span>입니다.</p>
               <p>저는 코드스테이츠 부트캠프에서 팀원과의 <u>협업</u>, <u>코드리뷰</u> 등으로 <u>페어 프로그래밍</u> 기반 과제 진행과 2번의 협업 프로젝트를 진행했습니다.
               사용자 입장에서 개발하는 것을 지향하여 계속 고민하고 더 나은 방향에 대해 팀원들과 소통하는 것을 중요시합니다.</p>
