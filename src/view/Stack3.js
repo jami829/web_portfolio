@@ -36,16 +36,16 @@ function Stack3() {
         </div>
         <div className='stack3-contents'>
 
-          <div id="arrow1"  {...useScrollFadeIn('up', 1, .5)}>
+          <div id="arrow1"  {...useScrollFadeIn('left', 1, .5)}>
             <ReplyBox img={react} name='React' contents="🥰" />
           </div>
-          <div id="arrow2" {...useScrollFadeIn('up', 1, .3)} >
+          <div id="arrow2" {...useScrollFadeIn('left', 1, .3)} >
             <ReplyBox img={redux} name='Redux' contents="😎" />
           </div>
-          <div id="arrow3" {...useScrollFadeIn('up', 1, .5)}>
-            <ReplyBox img={vue} name='Vue 그리고 Vuex' contents="🤩" />
+          <div id="arrow3" {...useScrollFadeIn('left', 1, .5)}>
+            <ReplyBox img={vue} name='Vue, Vuex' contents="🤩" />
           </div>
-          <div id="arrow4" {...useScrollFadeIn('up', 1, .8)}>
+          <div id="arrow4" {...useScrollFadeIn('left', 1, .8)}>
             <ReplyBox img={ts} name='Type-script' contents="😊" />
           </div>
 

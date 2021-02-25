@@ -69,6 +69,17 @@ function Project() {
                 {/* <div className="img-box" style={{ transform: `translateX(${currentSlide}%)` }}> */}
                 <img src={firstPro}></img>
               </div>
+              <div className="moveDirect-pro-2">
+                {currentSlide === 0
+                  ? <div className="here-pro">01</div>
+                  : <div className="not-here-pro" onClick={handlePage1}>01</div>
+                }
+                {currentSlide === -100
+                  ? <div className="here-pro">02</div>
+                  : <div className="not-here-pro" onClick={handlePage2}>02</div>
+                }
+
+              </div>
             </div>
             <div className="contents-box">
               <div>
@@ -93,6 +104,7 @@ function Project() {
                       </a>
                       </span>
                     </div>
+
                   </div>
                   : null
                 }
@@ -136,6 +148,7 @@ function Project() {
             </div>
             {/* <button id="left-btn" onClick={goLeft}><FaAngleLeft /></button>
           <button id="right-btn" onClick={goRight}><FaAngleRight /></button> */}
+
           </div>
         </div>
       </div>
