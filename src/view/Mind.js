@@ -37,6 +37,7 @@ function Mind() {
           </div>
           <div className='contents'>
             <p>애자일</p>
+            <p></p>
           </div>
         </div>
       </div>

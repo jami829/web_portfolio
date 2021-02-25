@@ -33,16 +33,16 @@ function Stack2() {
         {/* <div className="arrowbox-container" {...useScrollFadeIn('up', 1, 1)}> */}
 
         <div  {...useScrollFadeIn('left', 1, 0)}>
-          <ArrowBox img={react} contents="안녕하세요" />
+          <ArrowBox img={react} contents="class 컴포넌트와 functional 컴포넌트를 hooks로 다룰 줄 알더라구요!" />
         </div>
         <div {...useScrollFadeIn('left', 1, .3)} >
-          <ArrowBox img={redux} contents="redux" />
+          <ArrowBox img={redux} contents="제 집 드나들듯이 너무 자주 와요.." />
         </div>
         <div {...useScrollFadeIn('left', 1, .5)}>
-          <ArrowBox img={vue} contents="vue" />
+          <ArrowBox img={vue} contents="React랑 너무 친해서 질투가 났지만, 요즘에 많이 친해졌어요! Vuex도요!" />
         </div>
         <div {...useScrollFadeIn('left', 1, .8)}>
-          <ArrowBox img={ts} contents="타입스크립트" />
+          <ArrowBox img={ts} contents="" />
         </div>
         <div {...useScrollFadeIn('left', 1, 1)}>
           <RightArrowBox img={me} contents="나dd" />

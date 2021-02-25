@@ -1,9 +1,9 @@
 .About {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   font-size: 0.85rem;
-  // color: #dfdfdf;
-  color: #282828;
+  color: #dfdfdf;
+  // color: #282828;
   position: relative;
   z-index: 4100;
 
@@ -11,15 +11,19 @@
   // background: linear-gradient(to bottom, #28282800, 20%, #282828);
   // background: #282828;
   // background: rgba(245, 245, 245, 0.61);
-  background: #EBEEEE;
+  background: #282828;
   // background: #dcb58696;
 
   .about-inner {
+    
     // width: 100%;
     // height: 100vh;
     overflow: hidden;
-    padding: 10% 7%;
+    padding: 10% 0;
     display: flex;
+    justify-content: space-evenly;
+    
+    
 
     .profile-img {
       width: 400px;
@@ -33,19 +37,24 @@
         height: 100%;
         object-fit: cover;
       }
+      // animation: profile 2s ease-out both;
     }
     .introduce-container {
       width: 50%;
       height: 80%;
-      margin-left: 10%;
+      // margin-left: 10%;
       // font-size: 18px;
       
       .introduce-box1 {
         line-height: 2;
         position: relative;
-        
+        font-size: 1rem;
+        h1, p{
+          width: fit-content;
+        }
         .introduce1 {
           // display: inline-block;
+          // width: 10%;
           overflow: hidden;
           letter-spacing: .15em;
           // margin: 0 auto;
@@ -65,7 +74,8 @@
           span {
             font-size: 20px;
             // font-weight: bold;
-            color: whitesmoke;
+            // color: whitesmoke;
+            color: black;
             background-color: rgba(248, 248, 248, 0.233);
             border-radius: 2px;
             padding: 2px;
@@ -91,13 +101,13 @@
           animation: introduce_typing 3s steps(50, end) 4.3s both, introduce-blink-caret .75s step-end infinite;
         }
         .introduce5 {
-          // display: inline-flex;
+          // display: inline-block;
           overflow: auto;
           letter-spacing: .15em;
           // margin: 0 auto;
           white-space: nowrap;
           // border-right: .15em solid orange;
-          animation: introduce_typing 3s steps(50, end) 6.5s both, introduce-blink-caret .75s step-end infinite;
+          animation: introduce_typing 3s steps(50, end) 7s both, introduce-blink-caret .75s step-end infinite;
         }
         .introduce6 {
           // display: inline-block;
@@ -108,7 +118,7 @@
           // border-right: .15em solid orange;
           color: orange;
 
-          animation: introduce_typing 3s steps(50, end) 9s both, introduce-blink-caret .75s step-end infinite;
+          animation: introduce_typing 3s steps(50, end) 10s both, introduce-blink-caret .75s step-end infinite;
         }
         .introduce7 {
           // display: inline-block;
@@ -124,13 +134,13 @@
             color: orange;
           }
 
-          animation: introduce_typing 3s steps(50, end)11s both, introduce-blink-caret .75s step-end infinite;
+          animation: introduce_typing 3s steps(50, end)13s both, introduce-blink-caret .75s step-end infinite;
         }
 
       }
-      .introduce-box2 {
-        margin-top: 60px;
-      }
+      // .introduce-box2 {
+      //   margin-top: 60px;
+      // }
     }
   }
 
@@ -161,3 +171,10 @@
     border-color: transparent;
   }
 }
+
+
+// @keyframes profile {
+//   to {
+//     transform: translateY(-80%);
+//   }
+// }

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import About from "./About";
+import About from "./About2";
 import Blog from "./Blog";
 import Landing from "./Landing";
 import Project from "./Project";

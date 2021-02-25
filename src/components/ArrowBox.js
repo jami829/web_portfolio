@@ -18,9 +18,13 @@ export function ArrowBox({ img, contents }) {
 
 // export ArrowBox;
 
-export function RightArrowBox({ img, contents }) {
+export function RightArrowBox({ name, img, contents }) {
   return (
     <div className="right_arrow">
+      <div className="names">
+        {name}
+      </div>
+      {/* <div className="right-division-line"></div> */}
       <div className="right_arrow_box">
         {contents}
       </div>
