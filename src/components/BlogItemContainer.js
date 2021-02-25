@@ -140,7 +140,12 @@ function BlogItemContainer() {
           ? <div className="cycle" onClick={moveToSlide9} />
           : <div className="not-here" onClick={moveToSlide9} />
         }
-
+        <button onClick={goLeft} id="goLeft-2">
+          <FaAngleLeft />
+        </button>
+        <button onClick={goRight} id='goRight-2'>
+          <FaAngleRight />
+        </button>
       </div>
     </div>
   )
