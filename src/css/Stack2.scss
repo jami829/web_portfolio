@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;  
   .arrowbox-container {
-    width: 60%;
+    width: 70%;
     max-width: 1600px;
     padding: 50px;
     position: relative;
@@ -15,6 +15,7 @@
       color: black;
       font-size: 2.5rem;
       text-align: center;
+      margin-bottom: 100px;
       
       .title-icons {
         color: #E2DEEC;
@@ -106,4 +107,105 @@
       
     }
   }
+}
+
+@media (max-width: 1023px) {
+  .arrowbox-container {
+    width: 85% !important;
+    max-width: 1600px;
+    padding: 50px;
+    position: relative;
+
+    .stack-title {
+      color: black;
+      font-size: 2.5rem;
+      text-align: center;
+      
+      .title-icons {
+        color: #E2DEEC;
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+      }
+    }   
+    #arrow13 {
+      position: absolute;
+      top: 60% !important;
+      left: 25% !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .arrowbox-container {
+    width: 85% !important;
+    max-width: 1600px;
+    padding: 30px !important;
+    position: relative;
+
+    .stack-title {
+      color: black;
+      font-size: 2rem !important;
+      text-align: center;
+      
+      .title-icons {
+        color: #E2DEEC;
+        font-size: 3rem !important;
+        margin-bottom: 30px;
+      }
+    }   
+    #arrow13 {
+      position: absolute;
+      top: 60% !important;
+      left: 25% !important;
+    }
+  }
+}
+
+
+@media (max-width: 479px) {
+  #stack {
+    position: relative;
+    width: 100%;
+    height: 80% !important;
+    background: white;
+    display: flex;
+    justify-content: center;  
+  .arrowbox-container {
+    width: 85% !important;
+    height: fit-content !important;
+    max-width: 1600px;
+    padding: 30px !important;
+    position: relative;
+
+    .stack-title {
+      color: black;
+      font-size: 1.5rem !important;
+      text-align: center;
+      margin-bottom: 10px !important;
+
+      .title-icons {
+        color: #E2DEEC;
+        font-size: 2.5rem !important;
+        margin-bottom: 10px;
+      }
+    }   
+    .arrow-contents {
+      position: relative;
+      margin: 30px 0;
+      height: 200px;
+
+      #arrow4 {
+        position: absolute;
+        top: 3%;
+        left: 38%;
+      }
+
+      #arrow11 {
+        position: absolute;
+        top: 38%;
+        left: 78%;
+      }
+    }
+  }
+}
 }
