@@ -122,17 +122,17 @@ function Project() {
                   : null
                 }
               </div>
-            </div>
-            <div className="moveDirect-pro">
-              {currentSlide === 0
-                ? <div className="here-pro">01</div>
-                : <div className="not-here-pro" onClick={handlePage1}>01</div>
-              }
-              {currentSlide === -100
-                ? <div className="here-pro">02</div>
-                : <div className="not-here-pro" onClick={handlePage2}>02</div>
-              }
+              <div className="moveDirect-pro">
+                {currentSlide === 0
+                  ? <div className="here-pro">01</div>
+                  : <div className="not-here-pro" onClick={handlePage1}>01</div>
+                }
+                {currentSlide === -100
+                  ? <div className="here-pro">02</div>
+                  : <div className="not-here-pro" onClick={handlePage2}>02</div>
+                }
 
+              </div>
             </div>
             {/* <button id="left-btn" onClick={goLeft}><FaAngleLeft /></button>
           <button id="right-btn" onClick={goRight}><FaAngleRight /></button> */}

@@ -40,6 +40,7 @@
       
       .project-box-2-inner {
         position: absolute;
+        width: 100%;
         top: 12%;
         left: 5%; 
         display: flex;
@@ -68,9 +69,11 @@
         .contents-box {
           
           // position: absolute;
-          width: 50%;
-          top: 35%;
-          right: -2%;
+          width: 310px;
+          margin: 70px 60px;
+          
+          // top: 35%;
+          // right: -2%;
           .contents {
 
             strong {
@@ -96,28 +99,32 @@
               }
             }
           }
-        }
-        .moveDirect-pro {
-          color: whitesmoke;
-          position: absolute;
-          top: 108%;
-          right: 16%;
-          // width: 100px;
-          width: 13%;
-          display: flex;
-          justify-content: space-evenly;
-          font-size: .8rem;
           
-          .here-pro{
-            color: #F3CB22;
-            &:hover {
-              cursor: pointer;
+          .moveDirect-pro {
+            color: whitesmoke;
+            // position: absolute;
+            // top: 108%;
+            // right: 16%;
+            // width: 100px;
+            width: 220px;
+            // margin-top: 200px;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: .8rem;
+            margin: 100px auto;
+            
+            
+            .here-pro{
+              color: #F3CB22;
+              &:hover {
+                cursor: pointer;
+              }
             }
-          }
-          .not-here-pro{
-            color: rgb(92, 89, 89);
-            &:hover {
-              cursor: pointer;
+            .not-here-pro{
+              color: rgb(92, 89, 89);
+              &:hover {
+                cursor: pointer;
+              }
             }
           }
         }
