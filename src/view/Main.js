@@ -19,6 +19,7 @@ import { IoIosArrowUp } from "react-icons/io";
 
 
 
+
 function Main() {
 
   const aboutSectionRef = useRef(null);
