@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background: #28282879;
+  background: white;
   display: flex;
   justify-content: center;  
   .arrowbox-container {
@@ -10,5 +10,100 @@
     max-width: 1600px;
     padding: 50px;
     position: relative;
+
+    .stack-title {
+      color: black;
+      font-size: 2.5rem;
+      text-align: center;
+      
+      .title-icons {
+        color: #E2DEEC;
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+      }
+    }
+
+    .arrow-contents {
+      position: relative;
+      margin: 30px 0;
+      height: 500px;
+
+      #arrow1 {
+        position: absolute;
+        top: 0;
+        left: 10%;
+      }
+      #arrow2 {
+        position: absolute;
+        top: 19%;
+        left: 20%;
+      }
+      #arrow3 {
+        position: absolute;
+        top: 30%;
+        left: 4%;
+      }
+      #arrow4 {
+        position: absolute;
+        top: 5%;
+        left: 38%;
+      }
+      #arrow5 {
+        position: absolute;
+        top: 20%;
+        left: 45%;
+      }
+      #arrow6 {
+        position: absolute;
+        top: 55%;
+        left: 6%;
+      }
+      #arrow7 {
+        position: absolute;
+        top: 58%;
+        left: 80%;
+      }
+      #arrow8 {
+        position: absolute;
+        top: 36%;
+        left: 60%;
+      }
+      #arrow9 {
+        position: absolute;
+        top: 63%;
+        left: 50%;
+      }
+      #arrow10 {
+        position: absolute;
+        top: 18%;
+        left: 68%;
+      }
+      #arrow11 {
+        position: absolute;
+        top: 37%;
+        left: 88%;
+      }
+      #arrow12 {
+        position: absolute;
+        top: 2%;
+        left: 80%;
+      }
+      #arrow13 {
+        position: absolute;
+        top: 20%;
+        left: 90%;
+      }
+      #arrow14 {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+      }
+      #arrow15 {
+        position: absolute;
+        top: 20%;
+        left: 80%;
+      }
+      
+    }
   }
 }
