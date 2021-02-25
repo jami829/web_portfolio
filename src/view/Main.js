@@ -12,6 +12,7 @@ import Footer from "./Footer";
 
 // icons
 import { IoIosArrowUp } from "react-icons/io";
+import Stack3 from "./Stack3";
 
 // css 
 // import "../css/App.SCSS"
@@ -77,6 +78,10 @@ function Main() {
 
       <section>
         <Stack2 />
+      </section>
+
+      <section>
+        <Stack3 />
       </section>
 
       <section>

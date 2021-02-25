@@ -9,9 +9,9 @@ export function ArrowBox({ img, contents }) {
       <div className="profile_photo">
         <img src={img}></img>
       </div>
-      <div className="arrow_box">
+      {/* <div className="arrow_box">
         {contents}
-      </div>
+      </div> */}
     </div>
   )
 }

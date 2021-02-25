@@ -2,7 +2,7 @@ import React from 'react';
 
 
 // components
-import { ArrowBox, RightArrowBox } from '../components/Reply';
+import { ArrowBox, RightArrowBox } from '../components/ArrowBox';
 import useScrollFadeIn from '../components/useScrollFadeIn'
 // import RightArrowBox from '../components/ArrowBox';
 // css
@@ -37,16 +37,16 @@ function Stack2() {
         {/* <div className="arrowbox-container" {...useScrollFadeIn('up', 1, 1)}> */}
 
         <div className="stack-title">
-          <div className="title-icons">
+          <div className="title-icons" {...useScrollFadeIn('up', 1, 0)}>
             <ImQuotesLeft />
           </div>
-          <div className='title-contents'>
+          <div className='title-contents' {...useScrollFadeIn('up', 1, .3)}>
             Stack을 소개합니다.
           </div>
         </div>
         <div className='arrow-contents'>
 
-          <div id="arrow1"  {...useScrollFadeIn('up', 1, 0)}>
+          <div id="arrow1"  {...useScrollFadeIn('up', 1, .5)}>
             <ArrowBox img={react} contents="🥰" />
           </div>
           <div id="arrow2" {...useScrollFadeIn('up', 1, .3)} >
@@ -68,25 +68,25 @@ function Stack2() {
             <ArrowBox img={s3} contents="🤗" />
           </div>
           <div id="arrow8" {...useScrollFadeIn('up', 1, .6)}>
-            <ArrowBox img={cloudFront} contents="" />
+            <ArrowBox img={cloudFront} contents="🙂" />
           </div>
           <div id="arrow9" {...useScrollFadeIn('up', 1, .8)}>
-            <ArrowBox img={css} contents="" />
+            <ArrowBox img={css} contents="😌" />
           </div>
           <div id="arrow10" {...useScrollFadeIn('up', 1, .3)}>
-            <ArrowBox img={express} contents="" />
+            <ArrowBox img={express} contents="🏄🏻" />
           </div>
           <div id="arrow11" {...useScrollFadeIn('up', 1, .8)}>
-            <ArrowBox img={js} contents="" />
+            <ArrowBox img={js} contents="🎵" />
           </div>
           <div id="arrow12" {...useScrollFadeIn('up', 1, .2)}>
-            <ArrowBox img={ec2} contents="" />
+            <ArrowBox img={ec2} contents="🏋️‍♂️" />
           </div>
           <div id="arrow13" {...useScrollFadeIn('up', 1, .8)}>
-            <ArrowBox img={mysql} contents="" />
+            <ArrowBox img={mysql} contents="✏" />
           </div>
           <div id="arrow14" {...useScrollFadeIn('up', 1, .5)}>
-            <ArrowBox img={nodejs} contents="" />
+            <ArrowBox img={nodejs} contents="🥟" />
           </div>
           {/* <div id="arrow15" {...useScrollFadeIn('up', 1, 1)}>
             <RightArrowBox img={me} contents="나dd" />
