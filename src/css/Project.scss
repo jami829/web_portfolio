@@ -286,8 +286,14 @@
     }
 }
 
-@media (max-width: 767px) {
-  .project-box-2-inner {
-    padding: 0px !important;
+@media (max-width: 864px) {
+  .project-box-2 {
+    width: 70%;
+    .project-box-2-inner {
+      padding: 0px !important;
+    }
   }
+}
+@media (max-width: 767px) {
+  
 }
