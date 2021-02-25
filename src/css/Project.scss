@@ -65,6 +65,10 @@
               object-fit: cover;
             }
           }
+
+        .moveDirect-pro-2 {
+          display: none;
+        }
         }
         .contents-box {
           
@@ -154,9 +158,6 @@
           @extend %btn-style
         }
 
-        .moveDirect-pro-2 {
-          display: none;
-        }
         
       }
     }
