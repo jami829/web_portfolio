@@ -1,0 +1,53 @@
+.mouse-scroll {
+
+  // width: 20px;
+  // height: 55px;
+  
+  
+  
+  .mousey {
+    padding: .3px 6px;
+    width: 3px;
+    height: 25px;
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+    box-sizing: content-box;
+    
+    &:hover {
+      cursor: pointer;
+    }
+
+    .scroller {
+
+      width: 3px;
+      // height: 8px; 
+      height: 4px; 
+      border-radius: 25%;
+      // background: black;
+      background: whitesmoke;
+      
+      // animation:  mouse-down 2s cubic-bezier(.15, .41, .69, .94) infinite;
+      animation:  mouse-down 2s linear infinite;
+      // animation: mouse-down 2.2s cubic-bezier(.15, .41, .69, .94) 0.1 infinite;
+      // animation-name: mouse-down;
+      // animation-duration: cubic-bezier(.15, .41, .69, .94);
+      // animation-iteration-count: infinite;
+
+    }
+  }
+}
+
+@keyframes mouse-down {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  10% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(10px);
+    opacity: 0;
+    // margin-bottom: 8px;
+  }
+}
