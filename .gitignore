@@ -3,6 +3,11 @@
 
 potter.xml
 
+
+src/fonts/
+blogData.js
+
+
 # dependencies
 /node_modules
 /.pnp
@@ -24,3 +29,4 @@ potter.xml
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
