@@ -27,7 +27,7 @@ function Mind() {
             <img src={pair} alt="." />
           </div>
           <div className='contents'>
-            페이프로그래밍
+            페어 프로그래밍
           </div>
         </div>
 
