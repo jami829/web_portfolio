@@ -69,7 +69,7 @@ function Project() {
                 {/* <div className="img-box" style={{ transform: `translateX(${currentSlide}%)` }}> */}
                 <img src={firstPro}></img>
               </div>
-              <div className="moveDirect-pro-2">
+              {/* <div className="moveDirect-pro-2">
                 {currentSlide === 0
                   ? <div className="here-pro">01</div>
                   : <div className="not-here-pro" onClick={handlePage1}>01</div>
@@ -79,14 +79,14 @@ function Project() {
                   : <div className="not-here-pro" onClick={handlePage2}>02</div>
                 }
 
-              </div>
+              </div> */}
             </div>
             <div className="contents-box">
               <div>
                 {currentSlide === 0
                   ? <div className="contents">
                     <strong>Starry Night</strong>
-                    <p> 다크테마 기반 별 사진 특화 웹서비스</p>
+                    <p className="subTitle"> 다크테마 기반 별 사진 특화 웹서비스</p>
                     <p className="stacks">React SCSS AWS(S3, cloudFront)</p>
                     <div className="platform">
                       <span>
@@ -111,7 +111,7 @@ function Project() {
                 {currentSlide === -100
                   ? <div className="contents">
                     <strong>HTTP To do service</strong>
-                    <p>바쁜 일상 속 효율적인 일정관리 시스템</p>
+                    <p className="subTitle">바쁜 일상 속 효율적인 일정관리 시스템</p>
                     <p className="stacks">React(hooks) Type-Script CSS AWS(S3)</p>
                     <div className="platform">
                       <span>
