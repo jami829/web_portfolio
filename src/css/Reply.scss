@@ -307,7 +307,7 @@
   .reply {
     position: relative;
     display: flex;
-    width: 350px !important;
+    width: 270px !important;
     margin: 10px auto;
     .reply-card {
       width: 100%;
@@ -322,8 +322,8 @@
         align-items: center;
         .reply_profile_photo {
           margin-right: 20px;
-          width: 30px;
-          height: 30px;
+          width: 20px;
+          height: 20px;
           // background-color: #E6E6E6;
           // border: 1px solid yellow;
           border-radius: 20px;
@@ -340,7 +340,7 @@
         }
         .reply-name {
           margin-top: 5px;
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
       }
       
@@ -356,7 +356,7 @@
       .reply_box {
         position: relative;
         margin: 0px 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
   
     }

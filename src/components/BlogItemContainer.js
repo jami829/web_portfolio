@@ -140,6 +140,8 @@ function BlogItemContainer() {
           ? <div className="cycle" onClick={moveToSlide9} />
           : <div className="not-here" onClick={moveToSlide9} />
         }
+
+        {/* 모바일 반응형 */}
         <button onClick={goLeft} id="goLeft-2">
           <FaAngleLeft />
         </button>

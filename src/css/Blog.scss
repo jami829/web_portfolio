@@ -275,7 +275,8 @@
         .moveDirect {
           position: relative;
           width: 200px;
-          margin: 30px auto;
+          margin: 60px auto;
+          margin-bottom: 10px;
           display: flex;
           justify-content: space-evenly;
           .cycle {
@@ -326,15 +327,53 @@
 
   @media (max-width: 479px) {
     .blog {
+      padding: 60px 0;
       #item-list-container {
         .title-blog {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
         #item-list-inner {
-            width: 340px;
+            width: 300px;
             display: flex;
             overflow: hidden;
             text-align: center;
+            .post {
+                border: 1px solid #d9d9d97a;
+                position: relative;
+              .post-img {
+                display: block;
+                height: 180px !important;
+                
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+              
+              .post-info {
+                background-color: whitesmoke;
+                color: black;
+                height: 50px;
+                padding: 30px;
+                font-size: 17px;
+                
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                p {
+                  color: gray;
+                  font-size: 14px;
+                }
+              }
+  
+              &:hover {
+                cursor: pointer;
+                transition: all .3s ease;
+                box-shadow: 12px 12px 12px rgba(38, 38, 38, .2);
+                top: -10px;
+              }
+            }
             
           #goLeft {
             left: 5%;
