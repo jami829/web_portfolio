@@ -22,7 +22,7 @@ const testTyping = () => {
   if (split.length) {
 
     for (let word of split) {
-      console.log(word)
+      // console.log(word)
 
       // if (text.length) {
       //   temp = [...temp, text]
@@ -33,4 +33,4 @@ const testTyping = () => {
 
 
 }
-console.log(testTyping())
+// console.log(testTyping())

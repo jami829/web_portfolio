@@ -74,7 +74,7 @@ const BlogItem = ({ post }) => {
 
   useEffect(() => {
     getImgUrl()
-    console.log("imgUrl", imgUrl)
+    // console.log("imgUrl", imgUrl)
   })
 
 

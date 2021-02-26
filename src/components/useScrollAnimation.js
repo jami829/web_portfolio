@@ -23,7 +23,7 @@ const useScrollAnimation = (direction = 'up', duration = 1, delay = 0.2) => {
 
   const handleScroll = useCallback(([entry]) => {
     const { current } = element;
-    console.log("entry", entry.isIntersecting)
+    // console.log("entry", entry.isIntersecting)
     if (entry.isIntersecting) {
       current.style.transitionProperty = 'all';
       current.style.transitionDuration = `${duration}s`;

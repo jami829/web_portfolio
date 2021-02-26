@@ -145,14 +145,14 @@
               padding: 30px 45px;
               .post-title {
                 font-size: 17px;
-                
+                display: block;
                 white-space: nowrap;
                 overflow: hidden;
-                text-overflow: ellipsis;
+                text-overflow: ellipsis; // block에서만 적용됨
                 
               }
               .createdAt {
-                align-self: start;
+                display: flex;
                 color: gray;
                 font-size: 14px;
               }

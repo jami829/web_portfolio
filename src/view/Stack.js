@@ -66,7 +66,7 @@ function Stack() {
 
   useEffect(() => {
 
-    console.log("stacks", stacks)
+    // console.log("stacks", stacks)
     typeWriter()
   }, [])
 
