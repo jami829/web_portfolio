@@ -494,9 +494,10 @@
       position: relative;
       width: 100%;
       max-width: 1600px;
-      padding: 15% 7%;
+      padding: 50px 0;
       
       text-align: center;
+      margin: 0 auto;
       
       .project-box-1 {
         color: #F3CB22;
@@ -563,7 +564,8 @@
           .contents-box {
             
             position: unset;
-            width: 310px;
+            // width: 310px;
+            width: 100% !important;
             margin: 30px auto !important;
             margin-bottom: 0px !important;
             

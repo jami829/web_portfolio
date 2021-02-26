@@ -12,9 +12,9 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
       case 'down':
         return 'translate3d(0, -50%, 0)'
       case 'left':
-        return 'translate3d(12%, 0, 0)'
+        return 'translate3d(1.6rem, 0, 0)' // 아이폰 5 반응형에 맞추다보니 50%에서 변경됨
       case 'right':
-        return 'translate3d(-12%, 0, 0)'
+        return 'translate3d(-1.6rem, 0, 0)'
       default:
         return;
     };

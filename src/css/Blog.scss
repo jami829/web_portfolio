@@ -82,10 +82,10 @@
       // width: 30.75%;
       // width: 100%;
       // overflow: hidden;
-      text-align: center;
       max-width: 1600px;
       margin: 0 auto;
       .title-blog {
+        text-align: center;
         margin: 50px 0;
         margin-top: 10px;
         color: #95A4A3;
@@ -93,6 +93,7 @@
         letter-spacing: 3px;
       }
         #item-list-inner {
+          
           // overflow: hidden;
           // display: inline-block;
           // width: 100%;
@@ -103,7 +104,7 @@
           // display: grid;
           // grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
           // grid-gap: 70px;
-          text-align: center;
+          // text-align: center;
           .blog-item-box {
             transition: all 1s ease-in-out;
             // margin:0 1px;
@@ -114,7 +115,7 @@
             position: relative;
             // display: flex; 
             
-            justify-content: center;
+            // justify-content: center;
             // width: 600px;
             .post {
             // overflow: hidden;
@@ -122,6 +123,7 @@
               border: 1px solid #d9d9d97a;
               position: relative;
               // max-width: 100%;
+              
             a {
               text-decoration: none;
             }
@@ -140,13 +142,17 @@
               background-color: whitesmoke;
               color: black;
               height: 50px;
-              padding: 30px;
-              font-size: 17px;
-              
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              p {
+              padding: 30px 45px;
+              .post-title {
+                font-size: 17px;
+                
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                
+              }
+              .createdAt {
+                align-self: start;
                 color: gray;
                 font-size: 14px;
               }
@@ -333,7 +339,7 @@
           font-size: 1rem;
         }
         #item-list-inner {
-            width: 300px;
+            width: 280px;
             display: flex;
             overflow: hidden;
             text-align: center;
@@ -356,14 +362,14 @@
                 color: black;
                 height: 50px;
                 padding: 30px;
-                font-size: 17px;
+                font-size: 12px !important;
                 
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                p {
+                .createdAt {
                   color: gray;
-                  font-size: 14px;
+                  font-size: 10px !important;
                 }
               }
   

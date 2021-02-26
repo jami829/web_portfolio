@@ -90,7 +90,7 @@ const Temp = ({ post }) => {
           <strong className="post-title">
             {post.title}
           </strong>
-          <p>{post.pubDate.substring(5, 16)}</p>
+          <p className="createdAt">{post.pubDate.substring(5, 16)}</p>
         </div>
       </a>
     </div>

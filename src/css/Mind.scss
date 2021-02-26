@@ -18,7 +18,7 @@
       .mind-icons {
         width: 100px;
   
-        img {
+        .icons {
           max-width: 100%;
         }
       }
@@ -31,7 +31,7 @@
 }
 
 @media (max-width: 1023px) {
-  img {
+  .icons {
     max-width: 80% !important;
   }
 }
@@ -45,7 +45,7 @@
     .mind-icons {
       width: 100px;
 
-      img {
+      .icons {
         max-width: 45% !important;
       }
     }     
@@ -67,7 +67,7 @@
       .mind-icons {
         width: 65px !important;
   
-        img {
+        .icons {
           max-width: 100%;
         }
       }

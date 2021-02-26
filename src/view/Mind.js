@@ -15,7 +15,7 @@ function Mind() {
 
         <div className="mind-icons-box">
           <div className="mind-icons">
-            <img src={codeReview} alt="." />
+            <img className="icons" src={codeReview} alt="." />
           </div>
           <div className='contents'>
             코드리뷰
@@ -24,7 +24,7 @@ function Mind() {
 
         <div className="mind-icons-box">
           <div className="mind-icons">
-            <img src={pair} alt="." />
+            <img className="icons" src={pair} alt="." />
           </div>
           <div className='contents'>
             페어 프로그래밍
@@ -33,7 +33,7 @@ function Mind() {
 
         <div className="mind-icons-box">
           <div className="mind-icons">
-            <img src={agile} alt="." />
+            <img className="icons" src={agile} alt="." />
           </div>
           <div className='contents'>
             <p>애자일</p>
