@@ -11,30 +11,30 @@ body {
 
   .App {
     position: relative;
-    // .scollToTop-btn {
-    //   position: fixed;
-    //   // top: 92vh;
-    //   bottom: 10%;
-    //   right: 1.8%;
-    //   width: 30px;
-    //   height: 30px;
-    //   background: gray;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   color: white;
+    .scollToTop-btn {
+      position: absolute;
+      top: 99%;
+      bottom: 10%;
+      right: 1.8%;
+      width: 30px;
+      height: 30px;
+      background: rgba(128, 128, 128, 0.507);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.479);
       
       
-    //   border-radius: 10px;
+      border-radius: 10px;
 
-    //   &:hover {
-    //     cursor: pointer;
-    //     width: 35px;
-    //     height: 35px;
-    //     background: whitesmoke;
-    //     transform: translateX(6%);
-    //   }
-    // }
+      &:hover {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        background: whitesmoke;
+        transform: translateX(6%);
+      }
+    }
   }
 }
 

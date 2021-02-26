@@ -17,6 +17,7 @@ import Stack3 from "./Stack3";
 // css 
 // import "../css/App.SCSS"
 
+import useScrollFadeIn from "../components/useScrollFadeIn";
 
 
 
@@ -24,15 +25,15 @@ import Stack3 from "./Stack3";
 function Main() {
 
   const aboutSectionRef = useRef(null);
-  // const topBtnRef = useRef(null);
+  const topBtnRef = useRef(null);
 
-  // const moveToTop = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     left: 0,
-  //     behavior: "smooth"
-  //   })
-  // }
+  const moveToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  }
 
   // const topBtn = () => {
   //   const scrollTop = document.documentElement.scrollTop;
@@ -54,16 +55,16 @@ function Main() {
     })
   }
 
-  useEffect(() => {
-    // const scrollTop = document.documentElement.scrollTop;
-    // console.log("scrollTop", scrollTop)
+  // useEffect(() => {
+  //   // const scrollTop = document.documentElement.scrollTop;
+  //   // console.log("scrollTop", scrollTop)
 
-    // window.addEventListener("scroll", topBtn)
-    // console.log("aboutSectionRef", aboutSectionRef)
-    return () => {
-      // window.addEventListener("scroll", topBtn)
-    }
-  })
+  //   // window.addEventListener("scroll", topBtn)
+  //   console.log("aboutSectionRef", aboutSectionRef)
+  //   return () => {
+  //     window.addEventListener("scroll", topBtn)
+  //   }
+  // })
 
   return (
     <div>
@@ -99,10 +100,10 @@ function Main() {
       <section>
         <Footer />
       </section>
-      {/* 
-      <div className="scollToTop-btn" ref={topBtnRef}>
+
+      <div className="scollToTop-btn" onClick={moveToTop}  {...useScrollFadeIn('up', 1, 1.5)}>
         <IoIosArrowUp />
-      </div> */}
+      </div>
     </div>
   )
 

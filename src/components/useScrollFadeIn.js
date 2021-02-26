@@ -14,7 +14,9 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
       case 'left':
         return 'translate3d(1.6rem, 0, 0)' // 아이폰 5 반응형에 맞추다보니 50%에서 변경됨
       case 'right':
-        return 'translate3d(-1.6rem, 0, 0)'
+        return 'translate3d(-50%, 0, 0)'
+      case 'right2':
+        return 'translate3d(-2.6rem, 0, 0)'
       default:
         return;
     };
@@ -43,7 +45,7 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
     const { current } = element;
     // console.log("isIntersecting", current)
     if (current) {
-      observer = new IntersectionObserver(handleScroll, { threshold: 0.7 });
+      observer = new IntersectionObserver(handleScroll, { threshold: 0.5 });
       observer.observe(current);
 
       return () => observer && observer.disconnect();

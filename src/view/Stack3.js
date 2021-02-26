@@ -36,17 +36,17 @@ function Stack3() {
         </div>
         <div className='stack3-contents'>
 
-          <div id="arrow1"  {...useScrollFadeIn('left', 1, .5)}>
-            <ReplyBox img={react} name='React' contents="🥰" />
+          <div id="arrow1"  {...useScrollFadeIn('right', 1, .5)}>
+            <ReplyBox img={react} name='React' contents="class 및 Hooks를 활용합니다 🥰" />
           </div>
-          <div id="arrow2" {...useScrollFadeIn('left', 1, .3)} >
-            <ReplyBox img={redux} name='Redux' contents="😎" />
+          <div id="arrow2" {...useScrollFadeIn('right', 1, .3)} >
+            <ReplyBox img={redux} name='Redux' contents="상태관리 복잡성을 보다 유연하게 해결해요 😎" />
           </div>
-          <div id="arrow3" {...useScrollFadeIn('left', 1, .5)}>
-            <ReplyBox img={vue} name='Vue, Vuex' contents="🤩" />
+          <div id="arrow3" {...useScrollFadeIn('right', 1, .5)}>
+            <ReplyBox img={vue} name='Vue, Vuex' contents="Vue, Vuex로 개발 가능해요! 🤩" />
           </div>
-          <div id="arrow4" {...useScrollFadeIn('left', 1, .8)}>
-            <ReplyBox img={ts} name='Type-script' contents="😊" />
+          <div id="arrow4" {...useScrollFadeIn('right', 1, .8)}>
+            <ReplyBox img={ts} name='Type-script' contents="예측할 수 없는 에러를 방지하는데에 최고에요 😊" />
           </div>
 
           {/* <div id="arrow15" {...useScrollFadeIn('up', 1, 1)}>
