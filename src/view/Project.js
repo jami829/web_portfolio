@@ -12,6 +12,8 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { IoAirplaneOutline } from "react-icons/io5";
 import { FiGithub } from "react-icons/fi";
 
+import useScrollFadeIn from "../components/useScrollFadeIn";
+
 
 
 const TOTAL_SLIDES = 1;
@@ -53,15 +55,15 @@ function Project() {
     <div className="project">
       <div className="project-inner">
         <div className="project-box-1">
-          <div className="project-title">
+          <div className="project-title" {...useScrollFadeIn('right', 1, 0)}>
             Here's Project
           </div>
-          <div className="project-subtitle">
+          <div className="project-subtitle" {...useScrollFadeIn('right', 1, 0.1)}>
             프로젝트를 확인해보세요!
           </div>
         </div>
-        <div className="project-box-2" >
-          <div className="project-box-2-inner">
+        <div className="project-box-2"{...useScrollFadeIn('right', 1, 0.2)}>
+          <div className="project-box-2-inner" {...useScrollFadeIn('right', 1, 0.1)}>
             <div className="img-box">
               <div ref={slideRef} style={{ transform: `translateX(${currentSlide}%)` }}>
                 <img src={finalPro}></img>

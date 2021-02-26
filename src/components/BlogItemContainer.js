@@ -5,7 +5,7 @@ import Temp from './Temp';
 import styled from 'styled-components';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
-import useSlider from "../components/useSlider";
+import useScrollFadeIn from "../components/useScrollFadeIn";
 
 // css -> blog.scss
 
@@ -82,8 +82,8 @@ function BlogItemContainer() {
   // console.log(blogDatas)
   return (
     <div id="item-list-container">
-      <div className="title-blog">CHECK SOME OF MY POSTS</div>
-      <div id="item-list-inner">
+      <div className="title-blog" {...useScrollFadeIn('right', 1, 0)}>CHECK SOME OF MY POSTS</div>
+      <div id="item-list-inner" >
         {posts.map((post, idx) => {
           if (idx <= 8) {
             return (

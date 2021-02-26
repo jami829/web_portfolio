@@ -8,12 +8,15 @@ import codeReview from '../img/code_review.png'
 import pair from '../img/Pair.png'
 import agile from '../img/agile.png'
 
+import useScrollFadeIn from "../components/useScrollFadeIn";
+
+
 function Mind() {
   return (
     <div className='mind'>
       <div className='mind-container'>
 
-        <div className="mind-icons-box">
+        <div className="mind-icons-box" {...useScrollFadeIn('up', 1, 0)} >
           <div className="mind-icons">
             <img className="icons" src={codeReview} alt="." />
           </div>
@@ -22,7 +25,7 @@ function Mind() {
           </div>
         </div>
 
-        <div className="mind-icons-box">
+        <div className="mind-icons-box" {...useScrollFadeIn('up', 1, .5)}>
           <div className="mind-icons">
             <img className="icons" src={pair} alt="." />
           </div>
@@ -31,7 +34,7 @@ function Mind() {
           </div>
         </div>
 
-        <div className="mind-icons-box">
+        <div className="mind-icons-box"{...useScrollFadeIn('up', 1, 0.2)}>
           <div className="mind-icons">
             <img className="icons" src={agile} alt="." />
           </div>
