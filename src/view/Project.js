@@ -63,7 +63,8 @@ function Project() {
           </div>
         </div>
         <div className="project-box-2"{...useScrollFadeIn('right2', 1, 0.2)}>
-          <div className="project-box-2-inner" {...useScrollFadeIn('right2', 1, 0.1)}>
+          <div className="project-box-2-inner">
+            {/* <div className="project-box-2-inner" {...useScrollFadeIn('right2', 1, 0.3)}> */}
             <div className="img-box">
               <div ref={slideRef} style={{ transform: `translateX(${currentSlide}%)` }}>
                 <img src={finalPro}></img>
