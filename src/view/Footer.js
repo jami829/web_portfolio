@@ -14,7 +14,7 @@ function Footer() {
         <div className="link">
           <span><a href="https://github.com/jami829" target="_blank">Github</a></span>
           <span id="blog-link"><a href="https://velog.io/@potter" target="_blank">Blog</a></span>
-          <span><a href="https://drive.google.com/file/d/1yXY9wmUrOBVx3t1VoflJe_Z4hhrQvE4s/view?usp=sharing" target="_blank">Resume</a></span>
+          <span><a href="https://drive.google.com/file/d/1XYfS_IVFC69vr4wmQR1EOb9KDbSPlAQP/view?usp=sharing" target="_blank">Resume</a></span>
 
         </div>
       </div>
